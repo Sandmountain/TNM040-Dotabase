@@ -1,12 +1,14 @@
-function GetHero(data) {
 
-    var heroes = [];
+// Define the `myApp.weatherService` module
+var dataService = angular.module('dotabase.dataService', ['ngResource']);
 
-    $.getJSON(../json/heroes.json, function(data){
-      $.each(data.heroes,function(i, f){
-      	var tblRow = "<tr>" + "<td>" + f.localizedName + "</td>" +
-      	"<td>" + f.id + "</td>" + "<td>" + f.abilities + "</td>" + "</tr>"
-      	$(tblRow).appendTo("#heroesdata tbody");
-      })
-    });
-}
+dataService.factory('heroes', ['$resource',
+    function($resource) {
+      return $resource('../json/heroes.json', {}, {
+          query: {
+            method: 'GET',
+            isArray: true
+          }
+      });
+    }
+  ]);
