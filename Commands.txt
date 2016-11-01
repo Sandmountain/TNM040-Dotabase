@@ -1,0 +1,14 @@
+### Lägga upp fil
+git add filnamn.filtyp
+git commit -m “add text här”
+git push
+
+
+### Tanka ner filer
+git pull
+
+
+
+
+
+
