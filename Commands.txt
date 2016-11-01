@@ -4,7 +4,7 @@ git commit -m “add text här”
 git push
 
 
-### Tanka ner filer
+### Tanka ner filer / uppdatera folder
 git pull
 
 
