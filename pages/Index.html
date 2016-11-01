@@ -27,6 +27,24 @@
   </div>
 </nav> 
 
+<div data-ng-controller="ravensCtrl">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Position</th>
+            <th>Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-ng-repeat="player in players | filter:search | orderBy:'name' | limitTo: 3">
+            <td>{{player.name}}</td>
+            <td>{{player.position}}</td>
+            <td>{{player.number}}</td>
+          </tr>
+        </tbody>
+      </table>
+      
  <!-- library dependencies -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
@@ -34,6 +52,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- angular modules -->
+  <script src="../json/heroes.js"></script>
   <!-- end -->
   
 </body>
