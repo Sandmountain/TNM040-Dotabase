@@ -2,7 +2,10 @@
 <html ng-app>
 <head>
 <meta charset ="UTF-8">
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
 <title> Dota database </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,6 +19,7 @@
   <div class="navbar-header">
     <a class="navbar-brand" href="index.html">Dota database</a>
   </div>
+<<<<<<< HEAD
   <ul class="nav navbar-nav">
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Page 1</a></li>
@@ -79,5 +83,39 @@
 
 
 
+=======
+</nav> 
+
+<div data-ng-controller="ravensCtrl">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Position</th>
+            <th>Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-ng-repeat="player in players | filter:search | orderBy:'name' | limitTo: 3">
+            <td>{{player.name}}</td>
+            <td>{{player.position}}</td>
+            <td>{{player.number}}</td>
+          </tr>
+        </tbody>
+      </table>
+      
+ <!-- library dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- angular modules -->
+  <script src="../json/heroes.js"></script>
+  <!-- end -->
+  
+>>>>>>> 37acfd7c1c9c58439449ba4851a8bd5c676a928d
 </body>
 </html>
