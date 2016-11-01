@@ -1,6 +1,6 @@
-### Lägga upp fil
+### LÃ¤gga upp fil
 git add filnamn.filtyp
-git commit -m “add text här”
+git commit -m â€œinfotextâ€
 git push
 
 
