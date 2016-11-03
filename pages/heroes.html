@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="hidden-xs col-sm-12 col-md-12 col-lg-12" style="font-family:'Pacifico'">
+        <h1>dododododo</h1>
+    </div>
+    <div class="col-sm-9 col-md-6" ng-if="currentHero">
+        <forecast-details heroesList="currentHero"> </forecast-details>
+    </div>
+    <div class="col-sm-3 col-md-6">
+        <div class="btn btn-default" ng-class="{'active': heroesList.localizedName == currentHero.localizedName}" style="display: block; padding: 20px; margin: 10px" ng-repeat="hero in yolo" ng-click="showHeroDetails(heroesList)">
+            {{heroesList.localizedName +" " + heroesList.id"}}
+        </div>
+    </div>
+    
+</div>
