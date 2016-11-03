@@ -1,26 +1,25 @@
-'use strict';
-// Define the `myApp.weatherService` module
-var dataService = angular.module('dotabase.dataService', []);
+/* use strict */
+var app = angular.module("RavensApp", []);
 
-app.service("dotaService", function ($http, $q)
+app.service("ravensService", function ($http, $q)
 {
 	var deferred = $q.defer();
-	$http.get('resources/json/heroes.json').then(function (data)
+	$http.get('../json/heroes.json').then(function (data)
 	{
 		deferred.resolve(data);
 	});
 
-	this.getHeroes = function ()
+	this.getPlayers = function ()
 	{
 		return deferred.promise;
 	}
 })
 
-.controller("heroesCtrl", function ($scope, dotaService)
+.controller("ravensCtrl", function ($scope, ravensService)
 {
-	var promise = ravensService.getHeroes();
+	var promise = ravensService.getPlayers();
 	promise.then(function (data)
 	{
-		$scope.heroes = data.data;
+		$scope.players = data.data;
 	});
 })
