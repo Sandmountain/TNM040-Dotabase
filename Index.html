@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="myWebsite">
+<html ng-app="dotabase">
 <head>
 <meta charset ="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,25 +89,6 @@
 
 
 </nav> 
-
-
-<div data-ng-controller="ravensCtrl">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Player</th>
-            <th>Position</th>
-            <th>Number</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr data-ng-repeat="player in players | filter:search | orderBy:'name' | limitTo: 3">
-            <td>{{player.name}}</td>
-            <td>{{player.position}}</td>
-            <td>{{player.number}}</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>        
+     
 </body>
 </html>
