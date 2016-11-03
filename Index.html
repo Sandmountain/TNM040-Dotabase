@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="myWebsite">
+<html ng-app="dotabase" ng-controller="HeroesCtrl">
 <head>
 <meta charset ="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="/pages/style.css">
+<link rel="stylesheet" href="pages/style.css">
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
@@ -17,7 +17,9 @@
 <!-- angular route, borde vara här /Lucas -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
  <!-- angular modules -->
- <script src="/script/heroes.js"></script>
+<script src="script/dotabase.js"></script>
+<script src="script/controller.js"></script>
+<script src="script/heroes.js"></script>
   <!-- end -->
 </head>
 
@@ -89,25 +91,6 @@
 
 
 </nav> 
-
-
-<div data-ng-controller="ravensCtrl">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Player</th>
-            <th>Position</th>
-            <th>Number</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr data-ng-repeat="player in players | filter:search | orderBy:'name' | limitTo: 3">
-            <td>{{player.name}}</td>
-            <td>{{player.position}}</td>
-            <td>{{player.number}}</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>        
+        
 </body>
 </html>
