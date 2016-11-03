@@ -11,8 +11,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="pages/style.css">
-
-<link rel="stylesheet" href="pages/style.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
@@ -136,5 +134,32 @@
   }
 </script>
 </nav> 
+
+
+<div class="mainContainer" data-ng-app="RavensApp">
+    <h1>Heroes</h1>
+
+    <input type="text" data-ng-model="search.$">
+
+    <div data-ng-controller="ravensCtrl">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Position</th>
+            <th>Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-ng-repeat="player in players | filter:search | orderBy:'name' | limitTo: 100">
+            <td>{{player.localizedName}}</td>
+            <td>{{player.id}}</td>
+            <td>{{player.abilities}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
 </body>
 </html>
