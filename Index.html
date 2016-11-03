@@ -1,18 +1,24 @@
 <!doctype html>
 <html ng-app="dotabase" ng-controller="HeroesCtrl">
+<html ng-app="dotabase">
 <head>
+
 <meta charset ="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title> Dota database </title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="pages/style.css">
 
+<link rel="stylesheet" href="pages/style.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 <!-- angular route, borde vara här /Lucas -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
@@ -21,9 +27,13 @@
 <script src="script/controller.js"></script>
 <script src="script/heroes.js"></script>
   <!-- end -->
+
+  
 </head>
 
 <body>
+
+<!-- navbar -->
 <nav class="navbar navbar-inverse">
   <div class="navbar-header">
     <a class="navbar-brand" href="index.html">Dota database</a>
@@ -35,7 +45,8 @@
     <li><a href="#">Page 3</a></li> 
   </ul>
 </nav>
-<div class="container"> 
+<!-- navbar slut -->
+
   <div class="row">
   <div class="box col-md-offset-4">
   <div class="container-1">
@@ -45,52 +56,144 @@
 </div>
 </div>
   <div class="row space">
-    <div class="col-md-4 col-md-offset-4" style="background-color: lavender;"> <img class="center-block" src="pages/lina.jpg"></div>
+    <div class="col-md-12" style="background-color: lavender;"> <img class="center-block" src="pages/lina.jpg"></div>
   </div>
-<div class="row ">
-<div class="col-md-8 col-md-offset-2" style="background-color: rgba(218, 112,214,80);">
+
+
+
+
+
+<!--
+<div class="container" style="background-color: blue">
+  <div class="row">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="javascript:void(0)" onclick="openCity('London')">London</a></li>
+      <li><a href="javascript:void(0)" onclick="openCity('Paris')">Paris</a></li>
+      <li><a href="javascript:void(0)" onclick="openCity('Tokyo')">Tokyo</a></li>
+    </ul>
+  </div> 
+  
+
+
+  <div class="container">
+  <div class="row ">
+  <div class="col-md-8 col-md-offset-2" style="background-color: rgba(218, 112,214,80);">
+    
+    <div class="media">
+      <div class="media-left">
+        <img src="pages/lina.jpg" class="media-object" id="London" style="width:60px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">London</h4>
+        <p>Dolorem ipsum...</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <div class="media-left">
+        <img src="pages/lina.jpg" class="media-object" id="Paris" style="width:60px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Paris</h4>
+        <p>Dolorem ipsum...</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <div class="media-left">
+        <img src="pages/lina.jpg" class="media-object" id="Tokyo" style="width:60px">
+      </div>
+        <div class="media-body">
+        <h4 class="media-heading">Tokyo</h4>
+        <p>Dolorem ipsum...</p>
+      </div>
+    </div>
+    
   <div class="media">
-  <div class="media-left">
-    <img src="pages/lina.jpg" class="media-object" style="width:60px">
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">John Doe</h4>
-    <p>Dolorem ipsum...</p>
-  </div>
+    <div class="media-left">
+      <img src="pages/lina.jpg" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">John Doe</h4>
+      <p>Dolorem ipsum...</p>
+    </div>
+    </div>
 </div>
+</div>
+-->
+
+<div class="container">
+<ul class="w3-navbar w3-black">
+  <li><a href="javascript:void(0)" onclick="openTab('spells')">Spells</a></li>
+  <li><a href="javascript:void(0)" onclick="openTab('items')">Items</a></li>
+  <li><a href="javascript:void(0)" onclick="openTab('lore')">Lore</a></li>
+</ul>
+
+<div id="spells" class="w3-container cate">
+    <div class="media">
+      <div class="media-left">
+        <img src="images/abilities/lina_dragon_slave_hp2.png" class="media-object" id="London" style="width:60px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Spell 1</h4>
+        <p>BoomBoom</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <div class="media-left">
+        <img src="images/abilities/lina_fiery_soul_hp2.png" class="media-object" id="Paris" style="width:60px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Spell 2</h4>
+        <p>Dolorem ipsum...</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <div class="media-left">
+        <img src="images/abilities/lina_laguna_blade_hp2.png" class="media-object" id="Tokyo" style="width:60px">
+      </div>
+        <div class="media-body">
+        <h4 class="media-heading">Spell 3</h4>
+        <p>Dolorem ipsum...</p>
+      </div>
+    </div>
+    
   <div class="media">
-  <div class="media-left">
-    <img src="pages/lina.jpg" class="media-object" style="width:60px">
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">John Doe</h4>
-    <p>Dolorem ipsum...</p>
-  </div>
+    <div class="media-left">
+      <img src="images/abilities/lina_light_strike_array_hp2.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Spell 4</h4>
+      <p>Dolorem ipsum...</p>
+    </div>
+    </div>
 </div>
-  <div class="media">
-  <div class="media-left">
-    <img src="pages/lina.jpg" class="media-object" style="width:60px">
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">John Doe</h4>
-    <p>Dolorem ipsum...</p>
-  </div>
+
+<div id="items" class="w3-container cate">
+  <h2>Items</h2>
+  <p>Lägg in Items</p>
 </div>
-  <div class="media">
-  <div class="media-left">
-    <img src="pages/lina.jpg" class="media-object" style="width:60px">
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">John Doe</h4>
-    <p>Dolorem ipsum...</p>
-  </div>
-</div>
-</div>
+
+<div id="lore" class="w3-container cate">
+  <h2>Lore</h2>
+  <p>Litte info</p>
 </div>
 </div>
 
-
+<script>
+  openTab("spells")
+  function openTab(tabCat) {
+      var i;
+      var x = document.getElementsByClassName("cate");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      document.getElementById(tabCat).style.display = "block";
+  }
+</script>
 </nav> 
-        
 </body>
 </html>
