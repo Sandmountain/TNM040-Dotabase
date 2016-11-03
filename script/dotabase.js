@@ -3,9 +3,11 @@
 angular.module('dotabase', [
   'ngRoute',
   'dotabase.dataService',
+  'dotabase.heroes',
+  'dotabase.heroDetails',
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/index'});
+  $routeProvider.otherwise({redirectTo: ''});
 }]);
