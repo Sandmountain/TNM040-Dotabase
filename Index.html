@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <script src="angularjstutorial-deps.js"></script>
 <script src="script/heroes.js"></script>
+<!--<script src="script/abilities.js"></script>-->
   <!-- end -->
 
   
@@ -125,7 +126,6 @@
     <h1>Dotabase</h1>
 
     <input type="text" data-ng-model="search.$">
-
     <div data-ng-controller="heroesCtrl">
       <table class="table table-striped">
         <thead>
@@ -137,7 +137,8 @@
         </thead>
         <tbody>
           <tr data-ng-repeat="hero in heroes | filter:search | orderBy:'name' | limitTo: 6">
-            <td><img src="images/heroes/{{hero.url}}_vert.jpg">{{player.localizedName}}</td>
+            <td><img src="images/heroes/{{hero.url}}_vert.jpg">{{hero.localizedName}}</td>
+            <td>{{hero.id}}</td>
             <td>{{hero.abilities}}</td>
           </tr>
         </tbody>
