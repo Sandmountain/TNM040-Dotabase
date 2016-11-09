@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <script src="angularjstutorial-deps.js"></script>
 <script src="script/heroes.js"></script>
-<!--<script src="script/abilities.js"></script>-->
+<script src="script/abilities.js"></script>
   <!-- end -->
 
   
@@ -137,6 +137,7 @@ tabs.on("click", function(){
 
     <input type="text" data-ng-model="search.$">
     <div data-ng-controller="heroesCtrl">
+    <div data-ng-controller="abilitiesCtrl">
       <table class="table table-striped">
         <thead>
           <tr>
@@ -146,14 +147,18 @@ tabs.on("click", function(){
           </tr>
         </thead>
         <tbody>
-          <tr data-ng-repeat="hero in heroes | filter:search | orderBy:'name' | limitTo: 6">
-            <td><img src="images/heroes/{{hero.url}}_vert.jpg">{{hero.localizedName}}</td>
+        <tr>
+
+         <!-- <tr data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'name' | limitTo: 100"> -->
+            <td data-ng-repeat="hero in heroes | filter:search | orderBy:'name' | limitTo: 1"><img src="images/heroes/{{hero.url}}_vert.jpg">{{hero.localizedName}}</td>
             <td>{{hero.id}}</td>
-            <td>{{hero.abilities}}</td>
+            <td data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'name' | limitTo: 4">
+            <img src="images/abilities/{{abilitiy.name}}_hp1.png">{{abilitiy.localizedName}}</td>
           </tr>
         </tbody>
       </table>
     </div>
+    <div>
   </div>
 </body>
 </html>
