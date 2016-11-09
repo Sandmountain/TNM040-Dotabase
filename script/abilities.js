@@ -1,18 +1,18 @@
 /* use strict */
 
-var app = angular.module('dotabaseApp', []);
+var app2 = angular.module('dotabaseApp2', []);
 
 app.service("abilitiesService", function ($http, $q)
 {
-	var deferred = $q.defer();
+	var deferred2 = $q.defer();
 	$http.get('json/abilities.json').then(function (data)
 	{
-		deferred.resolve(data);
+		deferred2.resolve(data);
 	});
 
 	this.getAbilities = function ()
 	{
-		return deferred.promise;
+		return deferred2.promise;
 	}
 })
 

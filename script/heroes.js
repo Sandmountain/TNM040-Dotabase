@@ -22,5 +22,6 @@ app.service("dotaService", function ($http, $q)
 	promise.then(function (data)
 	{
 		$scope.heroes = data.data;
+		console.log($scope)
 	});
 })
