@@ -1,4 +1,4 @@
-heroesList:[
+  [
     {
         "id": "1",
         "name": "npc_dota_hero_antimage",
@@ -1170,10 +1170,8 @@ heroesList:[
         "id": "96",
         "name": "npc_dota_hero_centaur",
         "localizedName": "Centaur Warrunner",
-        "url": [
-            "Centaur Warchief",
-            "Centaur_Warrunner"
-        ],
+        "url": 
+            "Centaur_Warrunner",
         "abilities": [
             "5514",
             "5515",
