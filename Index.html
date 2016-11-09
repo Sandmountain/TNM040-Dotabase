@@ -46,14 +46,15 @@
 <div class="container">
 <div class="row">
 <div class="col-md-8 col-md-offset-2" style="background-color: lightblue">
-
-<ul class="nav nav-tabs">
+<div class=tab-container>
+<ul class="tabs clearfix">
   <li><a href="javascript:void(0)" onclick="openTab('spells')">Spells</a></li>
   <li><a href="javascript:void(0)" onclick="openTab('items')">Items</a></li>
   <li><a href="javascript:void(0)" onclick="openTab('lore')">Lore</a></li>
 </ul>
+</div>
 
-<div id="spells" class="w3-container cate">
+<div id="spells" class="container cate">
     <div class="media">
       <div class="media-left">
         <img src="images/abilities/lina_dragon_slave_hp2.png" class="media-object" id="London" style="width:60px">
@@ -107,6 +108,15 @@
 </div>
 </div>
 </div>
+
+<script>
+  var tabs = $('.tabs > li');
+
+tabs.on("click", function(){
+  tabs.removeClass('active');
+  $(this).addClass('active');
+});
+</script>
 
 <script>
   openTab("spells")
