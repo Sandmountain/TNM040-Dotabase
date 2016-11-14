@@ -13,7 +13,7 @@
 }
 .container-1 input#search{
   width: 100%;
-  height: 50px;
+  height: 50px; /* Ändra storlek på search baren*/
   background: #2b303b;
   border: none;
   font-size: 10pt;
@@ -66,11 +66,23 @@
   max-height: 35px;
 }
 
+#spells_title{
+  color: red;
+}
+
+#items_title{
+  color: red;
+}
+
+#lore_title{
+  color: red;
+}
+
 ul.tabs{
   margin: 0;
   list-style-type : none;
-  line-height : 35px;
-  max-height: 35px;
+  line-height : 35px; /* Höjd på texten */
+  max-height: 35px; /* Höjd på fliken */
   overflow: hidden;
   display: inline-block;
   padding-right: 20px
@@ -78,26 +90,26 @@ ul.tabs{
 
 ul.tabs > li.active{
   z-index: 2;
-  background: #efefef;
+  background: green; /*Färgen på den aktiva taben */
 }
 
 ul.tabs > li.active:before{
-  border-color : transparent #efefef transparent transparent;
+  border-color : transparent;
 }
 
 
 ul.tabs > li.active:after{
-  border-color : transparent transparent transparent #efefef;
+  border-color : transparent;
 }
 
 ul.tabs > li{
   float : right;
-  margin : 5px -10px 0;
-  border-top-right-radius: 25px 170px;
-  border-top-left-radius: 20px 90px;
-  padding : 0 30px 0 25px;
+  margin : 5px -10px 0; /* Avstånd mellan tabsen och höjd på dem*/
+  border-top-right-radius: 25px 170px; /* Formen på tabsen */
+  border-top-left-radius: 20px 90px; /* Formen på tabsen */ 
+  padding : 0 30px 0 25px; /* Storlek på tabsen*/
   height: 170px;
-  background: #ddd;
+  background: #ddd; /* Färg på den inaktiva tabsen */
   position : relative;
   box-shadow: 0 10px 20px rgba(0,0,0,.5);
   max-width : 200px;
@@ -125,7 +137,7 @@ ul.tabs > li:before, ul.tabs > li:after{
 }
 
 ul.tabs > li:before{
-  border-color : transparent #ddd transparent transparent;
+  border-color : transparent;
   -webkit-transform : rotate(48deg);
   left: -23px;
 }
