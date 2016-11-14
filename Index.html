@@ -1,19 +1,18 @@
 <!doctype html>
-<head>
 
+<head>
 <meta charset ="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title> Dota database </title>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="pages/style.css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
 <script src="angularjstutorial-deps.js"></script>
 <script src="script/heroes.js"></script>
 <script src="script/abilities.js"></script>
   <!-- end -->
-
-  
 </head>
 
 <body>
@@ -27,11 +26,12 @@
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Page 1</a></li>
     <li><a href="#">Page 2</a></li> 
-    <li><a href="#">Page 3</a></li> g
+    <li><a href="#">Page 3</a></li> 
   </ul>
 </nav>
 <!-- navbar slut -->
 
+<!-- Sökbar -->
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="container-1">
@@ -40,25 +40,30 @@
     </div>
       </div>
   </div>
+<!-- Sökbar slut-->
+
+<!-- Cowerflow -->  
   <div class="row space">
     <div class="col-md-12" style="background-color: lavender;"> <img class="center-block" src="pages/lina.jpg"></div>
   </div>
+<!-- Cowerflow slut -->
 
+<!-- Tabs med innehåll -->
 <div class="container">
 <div class="row">
 <div class="col-md-8 col-md-offset-2" style="background-color: lightblue">
 <div class=tab-container>
 <ul class="tabs clearfix">
-  <li><a href="javascript:void(0)" onclick="openTab('spells')">Spells</a></li>
-  <li><a href="javascript:void(0)" onclick="openTab('items')">Items</a></li>
-  <li><a href="javascript:void(0)" onclick="openTab('lore')">Lore</a></li>
+  <li><a id="lore_title" href="javascript:void(0)" onclick="openTab('lore')">Lore</a></li>
+  <li><a id="items_title" href="javascript:void(0)" onclick="openTab('items')">Items</a></li>
+  <li><a id="spells_title" href="javascript:void(0)" onclick="openTab('spells')">Spells</a></li>
 </ul>
 </div>
 
 <div id="spells" class="container cate">
     <div class="media">
       <div class="media-left">
-        <img src="images/abilities/lina_dragon_slave_hp2.png" class="media-object" id="London" style="width:60px">
+        <img src="images/abilities/lina_dragon_slave_hp2.png" class="media-object" style="width:60px">
       </div>
       <div class="media-body">
         <h4 class="media-heading">Spell 1</h4>
@@ -68,7 +73,7 @@
     
     <div class="media">
       <div class="media-left">
-        <img src="images/abilities/lina_fiery_soul_hp2.png" class="media-object" id="Paris" style="width:60px">
+        <img src="images/abilities/lina_fiery_soul_hp2.png" class="media-object" style="width:60px">
       </div>
       <div class="media-body">
         <h4 class="media-heading">Spell 2</h4>
@@ -78,7 +83,7 @@
     
     <div class="media">
       <div class="media-left">
-        <img src="images/abilities/lina_laguna_blade_hp2.png" class="media-object" id="Tokyo" style="width:60px">
+        <img src="images/abilities/lina_laguna_blade_hp2.png" class="media-object" style="width:60px">
       </div>
         <div class="media-body">
         <h4 class="media-heading">Spell 3</h4>
@@ -97,18 +102,19 @@
     </div>
 </div>
 
-<div id="items" class="w3-container cate">
+<div id="items" class="container cate">
   <h2>Items</h2>
   <p>Lägg in Items</p>
 </div>
 
-<div id="lore" class="w3-container cate">
+<div id="lore" class="container cate">
   <h2>Lore</h2>
   <p>Litte info</p>
 </div>
 </div>
 </div>
 </div>
+<!-- Tabs med innehåll slut-->
 
 <script>
   var tabs = $('.tabs > li');
