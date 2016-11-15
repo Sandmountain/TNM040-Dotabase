@@ -1,5 +1,5 @@
 <!doctype html>
-
+<html data-ng-app="dotabaseApp">
 <head>
 <meta charset ="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,7 +41,8 @@
       </div>
   </div>
 <!-- Sökbar slut-->
-
+<div data-ng-controller="heroesCtrl">
+<div data-ng-controller="abilitiesCtrl">
 <!-- Cowerflow -->  
   <div class="row space">
     <div class="col-md-12" style="background-color: lavender;"> <img class="center-block" src="pages/lina.jpg"></div>
@@ -50,28 +51,27 @@
 
 <!-- Tabs med innehåll -->
 <div class="container">
-<div class="row">
-<div class="col-md-8 col-md-offset-2" style="background-color: lightblue">
-<div class=tab-container>
-<ul class="tabs clearfix">
-  <li><a id="lore_title" href="javascript:void(0)" onclick="openTab('lore')">Lore</a></li>
-  <li><a id="items_title" href="javascript:void(0)" onclick="openTab('items')">Items</a></li>
-  <li><a id="spells_title" href="javascript:void(0)" onclick="openTab('spells')">Spells</a></li>
-</ul>
-</div>
-
-<div id="spells" class="container cate">
-    <div class="media">
-      <div class="media-left">
-        <img src="images/abilities/lina_dragon_slave_hp2.png" class="media-object" style="width:60px">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2" style="background-color: lightblue">
+      <div class=tab-container>
+        <ul class="tabs clearfix">
+          <li><a id="lore_title" href="javascript:void(0)" onclick="openTab('lore')">Lore</a></li>
+          <li><a id="items_title" href="javascript:void(0)" onclick="openTab('items')">Items</a></li>
+          <li><a id="spells_title" href="javascript:void(0)" onclick="openTab('spells')">Spells</a></li>
+        </ul>
       </div>
-      <div class="media-body">
-        <h4 class="media-heading">Spell 1</h4>
-        <p>BoomBoom</p>
-      </div>
-    </div>
+      <div id="spells" class="container cate" data-ng-controller="abilitiesCtrl" >
+        <div class="media" data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'name' | limitTo: 4">
+          <div class="media-left">
+            <img src="images/abilities/{{abilitiy.name}}_hp1.png" style="width:60px">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">{{abilitiy.localizedName}}</h4>
+            <p>{{abilitiy.localizedName}}</p>
+          </div>
+        </div>
     
-    <div class="media">
+    <!--<div class="media">
       <div class="media-left">
         <img src="images/abilities/lina_fiery_soul_hp2.png" class="media-object" style="width:60px">
       </div>
@@ -99,7 +99,7 @@
       <h4 class="media-heading">Spell 4</h4>
       <p>Dolorem ipsum...</p>
     </div>
-    </div>
+    </div>-->
 </div>
 
 <div id="items" class="container cate">
@@ -110,6 +110,8 @@
 <div id="lore" class="container cate">
   <h2>Lore</h2>
   <p>Litte info</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -158,8 +160,8 @@ tabs.on("click", function(){
          <!-- <tr data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'name' | limitTo: 100"> -->
             <td data-ng-repeat="hero in heroes | filter:search | orderBy:'name' | limitTo: 1"><img src="images/heroes/{{hero.url}}_vert.jpg">{{hero.localizedName}}</td>
             <td>{{hero.id}}</td>
-            <td data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'name' | limitTo: 4">
-            <img src="images/abilities/{{abilitiy.name}}_hp1.png">{{abilitiy.localizedName}}</td>
+            <!--<td data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'name' | limitTo: 4">
+            <img src="images/abilities/{{abilitiy.name}}_hp1.png">{{abilitiy.localizedName}}</td>-->
           </tr>
         </tbody>
       </table>
