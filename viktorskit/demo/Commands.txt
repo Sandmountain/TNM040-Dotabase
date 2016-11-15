@@ -1,0 +1,24 @@
+﻿### Lägga upp fil
+git add filnamn.filtyp
+git commit -m “infotext”
+git push
+
+
+### Tanka ner filer / uppdatera folder
+git pull
+
+
+### ladda ner NodeJs,  Hosta server på egna datorn, skriv i CMD:
+npm install http-server -g
+
+För att använda:
+http-server C:\Folder
+
+Använd sedan ip adressen som står given i webläsaren
+
+
+
+
+
+$ npm install -g bower
+

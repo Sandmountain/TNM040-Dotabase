@@ -1,0 +1,112 @@
+<!doctype html>
+<head>
+
+<meta charset ="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title> Dota database </title>
+<!--CSSkoder-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="pages/style.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="../dist/carousel-3d.css">
+<link rel="stylesheet" href="demo.css">
+
+<!--Angular scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="../bower_components/angular-swipe/dist/angular-swipe.js"></script>
+<script src="../dist/carousel-3d.js"></script>
+<script src="demo.js"></script>
+<script src="script/heroes.js"></script>
+<script src="script/abilities.js"></script>
+<!-- end -->
+
+  </head>
+
+<body ng-app="demo">
+
+<!-- navbar -->
+<nav class="navbar navbar-inverse">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="index.html">Dota database</a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Page 1</a></li>
+    <li><a href="#">Page 2</a></li> 
+    <li><a href="#">Page 3</a></li> 
+  </ul>
+</nav>
+<!-- navbar slut -->
+
+
+
+          
+
+  <div class="container">
+   
+  <div ng-controller="AppController as app">
+    <carousel3d
+            ng-model="app.slides"
+            options="app.options"
+            on-selected-click="app.selectedClick(index)"
+            on-slide-change="app.slideChanged(index)"
+            on-last-slide="app.lastSlide(index)"
+            on-before-change="app.beforeChange(index)">
+
+        <carousel3d-slide ng-repeat="slide in app.slides">
+            <figure>
+                <img ng-src="{{slide.src}}" alt=""/>
+                <figcaption ng-bind="slide.caption"></figcaption>
+            </figure>
+        </carousel3d-slide>
+    </carousel3d>
+    </div>
+  </div>
+
+
+
+
+<script>
+  var tabs = $('.tabs > li');
+
+tabs.on("click", function(){
+  tabs.removeClass('active');
+  $(this).addClass('active');
+});
+</script>
+
+<script>
+  openTab("spells")
+  function openTab(tabCat) {
+      var i;
+      var x = document.getElementsByClassName("cate");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      document.getElementById(tabCat).style.display = "block";
+  }
+</script>
+</nav> 
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4467381-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+</body>
+</html>
