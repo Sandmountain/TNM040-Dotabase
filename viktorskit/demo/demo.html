@@ -71,10 +71,10 @@
             </ul>
          </div>-->
          <div id="spells" class="container cate">
-            <div data-ng-controller="heroesCtrl">
+            <div data-ng-controller="demo.heroesCtrl">
             <h1 data-ng-repeat="hero in heroes | filter:search | orderBy:'id' | limitTo: 1">{{hero.localizedName}}</h1>
             </div>
-            <div data-ng-controller="abilitiesCtrl">
+            <div data-ng-controller="demo.abilitiesCtrl">
             <div data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'id' | limitTo: 4">
                <div class="media-left">
                   <img ng-src="images/abilities/{{abilitiy.name}}_hp1.png" style="width:60px">
