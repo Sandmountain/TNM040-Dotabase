@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="demo">
 <head>
     <meta charset="utf-8">
     <title>dodo</title>
@@ -29,7 +29,7 @@
 </nav>
 <!-- navbar slut -->
 
-<div class="container" ng-app="demo" ng-controller="AppController as app">
+<div class="container" ng-controller="AppController as app">
   
     <carousel3d
             ng-model="app.slides"
@@ -60,7 +60,7 @@
             </div>
             </div>
 
-<div class="container"  ng-app="demo" >
+<div class="container">
    <div class="row">
       <div class="col-md-8 col-md-offset-2" style="background-color: lightblue">
          <!--<div class=tab-container>
@@ -71,10 +71,10 @@
             </ul>
          </div>-->
          <div id="spells" class="container cate">
-            <div data-ng-controller="demo.heroesCtrl">
+            <div data-ng-controller="heroesCtrl">
             <h1 data-ng-repeat="hero in heroes | filter:search | orderBy:'id' | limitTo: 1">{{hero.localizedName}}</h1>
             </div>
-            <div data-ng-controller="demo.abilitiesCtrl">
+            <div data-ng-controller="abilitiesCtrl">
             <div data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'id' | limitTo: 4">
                <div class="media-left">
                   <img ng-src="images/abilities/{{abilitiy.name}}_hp1.png" style="width:60px">
