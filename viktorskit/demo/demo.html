@@ -1,17 +1,17 @@
 <!doctype html>
-<html>
+<html ng-app="demo">
 <head>
     <meta charset="utf-8">
-    <title>dodo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Dota database</title>
  
     <link rel="stylesheet" href="../dist/carousel-3d.css">
     <link rel="stylesheet" href="demo.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="pages/style.css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="../dist/carousel-3d.css">
-
 </head>
 <body>
 
@@ -29,52 +29,51 @@
 </nav>
 <!-- navbar slut -->
 
-<div class="container" ng-app="demo" ng-controller="AppController as app">
-  
-    <carousel3d
-            ng-model="app.slides"
-            options="app.options"
-            on-selected-click="app.selectedClick(index)"
-            on-slide-change="app.slideChanged(index)"
-            on-last-slide="app.lastSlide(index)"
-            on-before-change="app.beforeChange(index)">
-
-        <carousel3d-slide ng-repeat="slide in app.slides">
-            <figure>
-                <img ng-src="{{slide.src}}" alt=""/>
-                <figcaption ng-bind="slide.caption"></figcaption>
-            </figure>
-        </carousel3d-slide>
-
+<div class="container" ng-controller="AppController as app">
+  <carousel3d
+      ng-model="app.slides"
+      options="app.options"
+      on-selected-click="app.selectedClick(index)"
+      on-slide-change="app.slideChanged(index)"
+      on-last-slide="app.lastSlide(index)"
+      on-before-change="app.beforeChange(index)">
+      <carousel3d-slide ng-repeat="slide in app.slides">
+        <figure>
+          <img ng-src="{{slide.src}}" alt=""/>
+          <figcaption ng-bind="slide.caption"></figcaption>
+        </figure>
+      </carousel3d-slide>
     </carousel3d>
 </div>
 
 
-   
-    <div class="mainContainer">
-     
+   <!-- Sökbar -->
+  <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="container-1">
         <span class="icon glyphicon glyphicon-search"></span>
-        <input type="text" id="search" data-ng-model="search.$" placeholder="Search..."  />
-            </div>
-            </div>
+        <input type="search" id="search" placeholder="Search..." />
+    </div>
+      </div>
+  </div>
+<!-- Sökbar slut-->
 
-<div class="container"  ng-app="demo" >
+<!-- Tabs med innehåll-->
+<div class="container">
    <div class="row">
       <div class="col-md-8 col-md-offset-2" style="background-color: lightblue">
-         <!--<div class=tab-container>
+         <div class=tab-container>
             <ul class="tabs clearfix">
-               <li><a href="javascript:void(0)" onclick="openTab('spells')">Spells</a></li>
-               <li><a href="javascript:void(0)" onclick="openTab('items')">Items</a></li>
-               <li><a href="javascript:void(0)" onclick="openTab('lore')">Lore</a></li>
+               <li><a id="lore_title" href="javascript:void(0)" onclick="openTab('lore')">Lore</a></li>
+               <li><a id="items_title" href="javascript:void(0)" onclick="openTab('items')">Items</a></li>
+               <li><a id="spells_title" href="javascript:void(0)" onclick="openTab('spells')">Spells</a></li>
             </ul>
-         </div>-->
+         </div>
          <div id="spells" class="container cate">
-            <div data-ng-controller="demo.heroesCtrl">
+            <div data-ng-controller="heroesCtrl">
             <h1 data-ng-repeat="hero in heroes | filter:search | orderBy:'id' | limitTo: 1">{{hero.localizedName}}</h1>
             </div>
-            <div data-ng-controller="demo.abilitiesCtrl">
+            <div data-ng-controller="abilitiesCtrl">
             <div data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'id' | limitTo: 4">
                <div class="media-left">
                   <img ng-src="images/abilities/{{abilitiy.name}}_hp1.png" style="width:60px">
@@ -86,19 +85,22 @@
                </div>
             </div>
          </div>
-         <div id="lore" class="w3-container cate">
-            <h2>Lore</h2>
-            <p>Litte info</p>
-            <h2>Items</h2>
+         <div id="items" class="container cate">
+          <h2>Items</h2>
             <p>Lägg in Items</p>
-         </div>
+        </div>
+
+        <div id="lore" class="container cate">
+          <h2>Lore</h2>
+          <p>Litte info</p>
+        </div>
       </div>
    </div>
   </div>
 </div>
 <div>
 </div>
-<!--
+
 <script>
   var tabs = $('.tabs > li');
 
@@ -121,7 +123,7 @@ tabs.on("click", function(){
 </script>
 </nav> 
 
--->
+
 <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-4467381-14']);
