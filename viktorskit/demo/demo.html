@@ -12,16 +12,13 @@
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="../dist/carousel-3d.css">
 
-
-
-
 </head>
 <body>
 
 <!-- navbar -->
 <nav class="navbar navbar-inverse">
   <div class="navbar-header">
-    <a class="navbar-brand" href="index.html">Dota database</a>
+    <a class="navbar-brand" href="Index.html">Dotabase</a>
   </div>
   <ul class="nav navbar-nav">
     <li class="active"><a href="#">Home</a></li>
@@ -32,9 +29,8 @@
 </nav>
 <!-- navbar slut -->
 
-<div class="container" id="App1" ng-app="demo" ng-controller="AppController as app">
-   
-
+<div class="container" ng-app="demo" ng-controller="AppController as app">
+  
     <carousel3d
             ng-model="app.slides"
             options="app.options"
@@ -64,7 +60,7 @@
             </div>
             </div>
 
-<div class="container" >
+<div class="container"  ng-app="demo" >
    <div class="row">
       <div class="col-md-8 col-md-offset-2" style="background-color: lightblue">
          <!--<div class=tab-container>
@@ -75,10 +71,10 @@
             </ul>
          </div>-->
          <div id="spells" class="container cate">
-            <div id="App3" ng-app="dotabaseApp3" data-ng-controller="heroesCtrl">
+            <div data-ng-controller="heroesCtrl">
             <h1 data-ng-repeat="hero in heroes | filter:search | orderBy:'id' | limitTo: 1">{{hero.localizedName}}</h1>
             </div>
-            <div id="App2" ng-app="dotabaseApp2" data-ng-controller="abilitiesCtrl">
+            <div data-ng-controller="abilitiesCtrl">
             <div data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'id' | limitTo: 4">
                <div class="media-left">
                   <img ng-src="images/abilities/{{abilitiy.name}}_hp1.png" style="width:60px">
@@ -99,6 +95,8 @@
       </div>
    </div>
   </div>
+</div>
+<div>
 </div>
 <!--
 <script>
