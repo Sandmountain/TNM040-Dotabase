@@ -1,153 +1,111 @@
 <!doctype html>
-<html ng-app="demo">
-<head>
-    <meta charset="utf-8">
-    <title>dodo</title>
- 
-    <link rel="stylesheet" href="../dist/carousel-3d.css">
-    <link rel="stylesheet" href="demo.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="pages/style.css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <link rel="stylesheet" href="../dist/carousel-3d.css">
+<html ng-app="demo" ng-controller="AppController">
+   <head>
+      <meta charset="utf-8">
+      <title>dodo</title>
+      <link rel="stylesheet" href="../dist/carousel-3d.css">
+      <link rel="stylesheet" href="demo.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="pages/style.css">
+      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      <link rel="stylesheet" href="../dist/carousel-3d.css">
+   </head>
+   <body>
+      <!-- navbar -->
+      <nav class="navbar navbar-inverse">
+         <div class="navbar-header">
+            <a class="navbar-brand" href="demo.html">Dotabase</a>
+         </div>
+         <ul class="nav navbar-nav">
+            <li class="active"><a href="demo.html">Home</a></li>
+            <li><a href="#">Heroes</a></li>
+            <li><a href="#">Items</a></li>
+            <li><a href="#">Guides</a></li>
+         </ul>
+      </nav>
+      <!-- navbar slut -->
+      <div class="container" ng-controller="AppController as app">
+         <!-- Sökruta -->
+         <div class="col-md-8 col-md-offset-2">
+            <div class="container-1">
+               <span class="icon glyphicon glyphicon-search"></span>
+               <input type="text" id="search" name="filter" ng-model="app.filterQuery" ng-change="app.filterSlides()" placeholder="Search..."  />
+            </div>
+         </div>
+         <!-- Sökruta slut -->
 
-</head>
-<body>
-
-<!-- navbar -->
-<nav class="navbar navbar-inverse">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="Index.html">Dotabase</a>
-  </div>
-  <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Page 1</a></li>
-    <li><a href="#">Page 2</a></li> 
-    <li><a href="#">Page 3</a></li> 
-  </ul>
-</nav>
-<!-- navbar slut -->
-
-<div class="container" ng-controller="AppController as app">
-  
-    <carousel3d
-            ng-model="app.slides"
+         <!-- Karusell -->
+         <carousel3d
+            ng-model="app.filteredSlides"
             options="app.options"
             on-selected-click="app.selectedClick(index)"
             on-slide-change="app.slideChanged(index)"
             on-last-slide="app.lastSlide(index)"
             on-before-change="app.beforeChange(index)">
-
-        <carousel3d-slide ng-repeat="slide in app.slides">
+         <carousel3d-slide ng-repeat="slide in app.filteredSlides">
             <figure>
-                <img ng-src="{{slide.src}}" alt=""/>
-                <figcaption ng-bind="slide.caption"></figcaption>
+               <img ng-src="{{slide.src}}" alt=""/>
+               <figcaption ng-bind="slide.caption"></figcaption>
             </figure>
-        </carousel3d-slide>
-
-    </carousel3d>
-</div>
-
-
-   
-    <div class="mainContainer">
-     
-    <div class="col-md-8 col-md-offset-2">
-      <div class="container-1">
-        <span class="icon glyphicon glyphicon-search"></span>
-        <input type="text" id="search" data-ng-model="search.$" placeholder="Search..."  />
-            </div>
-            </div>
-
-<div class="container">
-   <div class="row">
-      <div class="col-md-8 col-md-offset-2" style="background-color: lightblue">
-         <!--<div class=tab-container>
-            <ul class="tabs clearfix">
-               <li><a href="javascript:void(0)" onclick="openTab('spells')">Spells</a></li>
-               <li><a href="javascript:void(0)" onclick="openTab('items')">Items</a></li>
-               <li><a href="javascript:void(0)" onclick="openTab('lore')">Lore</a></li>
-            </ul>
-         </div>-->
-         <div id="spells" class="container cate">
-            <div data-ng-controller="heroesCtrl">
-            <h1 data-ng-repeat="hero in heroes | filter:search | orderBy:'id' | limitTo: 1">{{hero.localizedName}}</h1>
-            </div>
-            <div data-ng-controller="abilitiesCtrl">
-            <div data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'id' | limitTo: 4">
-               <div class="media-left">
-                  <img ng-src="images/abilities/{{abilitiy.name}}_hp1.png" style="width:60px">
-               </div>
-               <div class="media-body" >
-                  <h4 class="media-heading">{{abilitiy.localizedName}}</h4>
-                  <p>{{abilitiy.localizedName}}</p>
-               </div>
-               </div>
-            </div>
-         </div>
-         <div id="lore" class="w3-container cate">
-            <h2>Lore</h2>
-            <p>Litte info</p>
-            <h2>Items</h2>
-            <p>Lägg in Items</p>
-         </div>
+         </carousel3d-slide>
       </div>
-   </div>
-  </div>
-</div>
-<div>
-</div>
-<!--
-<script>
-  var tabs = $('.tabs > li');
+         <!-- Karusell slut -->
 
-tabs.on("click", function(){
-  tabs.removeClass('active');
-  $(this).addClass('active');
-});
-</script>
-
-<script>
-  openTab("spells")
-  function openTab(tabCat) {
-      var i;
-      var x = document.getElementsByClassName("cate");
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
-      }
-      document.getElementById(tabCat).style.display = "block";
-  }
-</script>
-</nav> 
-
--->
-<script>
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-4467381-14']);
-    _gaq.push(['_trackPageview']);
-
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="../bower_components/angular/angular.js"></script>
-<script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
-
-<script src="../bower_components/angular-swipe/dist/angular-swipe.js"></script>
-<script src="../dist/carousel-3d.js"></script>
-<!--<script src="script/heroes.js"></script>
-<script src="script/abilities.js"></script>-->
-<script src="demo.js"></script>
-
-
-</body>
+      <div class="mainContainer" ng-controller="AppController as app">
+         <!-- Inforuta -->
+         <div class="container" >
+            <div class="row">
+               <div class="col-md-8 col-md-offset-2" style="background-color: lightblue">
+                  <!-- Abilities -->
+                  <div id="spells" class="container cate">
+                     <div>
+                        <h1 data-ng-repeat="hero in heroes | filter:search | orderBy:'id' | limitTo: 1">{{hero.localizedName}}</h1>
+                     </div>
+                     <div>
+                        <div data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'id' | limitTo: 4">
+                           <div class="media-left">
+                              <img ng-src="images/abilities/{{abilitiy.name}}_hp1.png" style="width:60px">
+                           </div>
+                           <div class="media-body" >
+                              <h4 class="media-heading">{{abilitiy.localizedName}}</h4>
+                              <p>{{abilitiy.localizedName}}</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Lore/Items -->
+                  <div id="lore" class="w3-container cate">
+                     <h2>Lore</h2>
+                     <p>Litte info</p>
+                     <h2>Items</h2>
+                     <p>Lägg in Items</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Inforuta slut -->
+      </div>
+      <script>
+         var _gaq = _gaq || [];
+         _gaq.push(['_setAccount', 'UA-4467381-14']);
+         _gaq.push(['_trackPageview']);
+         
+         (function () {
+             var ga = document.createElement('script');
+             ga.type = 'text/javascript';
+             ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(ga, s);
+         })();
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="../bower_components/angular/angular.js"></script>
+      <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="../bower_components/angular-swipe/dist/angular-swipe.js"></script>
+      <script src="../dist/carousel-3d.js"></script>
+      <script src="demo.js"></script>
+   </body>
 </html>

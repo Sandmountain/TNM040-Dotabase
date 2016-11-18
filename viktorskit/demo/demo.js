@@ -6,11 +6,11 @@ var demo = angular.module('demo', [
         ])
         .controller('AppController', AppController);
 
-    AppController.$inject = ['$scope', '$log'];
+    AppController.$inject = ['$filter', '$log', '$scope', 'dotaService', 'abilitiesService'];
 
 
 
-    function AppController($scope, $log) {
+    function AppController($filter, $log, $scope,  dotaService, abilitiesService) {
         var vm = this;
 
         // SLIDES WITH CAPTIONS
@@ -131,6 +131,7 @@ var demo = angular.module('demo', [
             {'src': 'images/heroes/Wraith_king_vert.jpg', caption: 'Wraith King'},
             {'src': 'images/heroes/zeus_vert.jpg', caption: 'Zeus'},
         ];
+        vm.filteredSlides = vm.slides;
 
         vm.options = {
             sourceProp: 'src',
@@ -138,19 +139,20 @@ var demo = angular.module('demo', [
             perspective: 35,
             startSlide: 0,
             border: 0,
-            dir: 'ltr',
+            dir: 'rtl',
             width: 360,
             height: 270,
             space: 220,
             autoRotationSpeed: 0,
             loop: true,
+            clicking: true
         };
 
 
         vm.options2 = {
             visible: 3,
             perspective: 35,
-            startSlide: 0,
+            startSlide: 2,
             border: 0,
             dir: 'ltr',
             width: 360,
@@ -166,7 +168,14 @@ var demo = angular.module('demo', [
         vm.slideChanged = slideChanged;
         vm.beforeChange = beforeChange;
         vm.lastSlide = lastSlide;
+        vm.filterSlides = filterSlides;
 
+        function filterSlides(){
+            vm.filteredSlides = $filter('filter')(vm.slides, vm.filterQuery);
+            if($filter('filter')(vm.slides, vm.filterQuery) == 0)
+            vm.filteredSlides = [{'src': 'images/heroes/error.jpg', caption: 'error'}];
+          
+        }
 
         function lastSlide(index) {
            // $log.log('Last Slide Selected callback triggered. \n == Slide index is: ' + index + ' ==');
@@ -177,7 +186,9 @@ var demo = angular.module('demo', [
         }
 
         function selectedClick(index) {
-            //$log.log('Selected Slide Clicked callback triggered. \n == Slide index is: ' + index + ' ==');
+            $log.log('Selected Slide Clicked callback triggered. \n == Slide index is: ' + index + ' ==');
+           // document.write(index);
+          // console.log($scope.heroes);
         }
 
         function slideChanged(index) {
@@ -193,6 +204,22 @@ var demo = angular.module('demo', [
         function removeSlide(index, array) {
             array.splice(array.indexOf(array[index]), 1);
         }
+
+        //Heroes
+        var promise = dotaService.getHeroes();
+        promise.then(function (data)
+        {
+            $scope.heroes = data.data;
+            console.log($scope)
+        })
+
+        //Abilites
+        var promise2 = abilitiesService.getAbilities();
+        promise2.then(function (data)
+        {
+            $scope.abilities = data.data;
+            console.log($scope)
+        });
     }
 
 
@@ -208,15 +235,6 @@ demo.service("abilitiesService", function ($http, $q)
     {
         return deferred2.promise;
     }
-})
-.controller("abilitiesCtrl", function ($scope, abilitiesService)
-{
-    var promise = abilitiesService.getAbilities();
-    promise.then(function (data)
-    {
-        $scope.abilities = data.data;
-        console.log($scope)
-    });
 });
 
 demo.service("dotaService", function ($http, $q)
@@ -231,16 +249,6 @@ demo.service("dotaService", function ($http, $q)
     {
         return deferred.promise;
     }
-})
-
-.controller("heroesCtrl", function ($scope, dotaService)
-{
-    var promise = dotaService.getHeroes();
-    promise.then(function (data)
-    {
-        $scope.heroes = data.data;
-        console.log($scope)
-    });
 });
 
 
