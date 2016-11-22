@@ -408,8 +408,12 @@
             '       </div>' +
             '       <p ng-switch-when=\"false\" class="carousel-3d-loader-error">There was a problem during load</p>' +
             '       <div ng-if="vm.controls" class="carousel-3d-controls">' +
-            '           <div class="carousel-3d-next arrow-left" ng-click=\"vm.goPrev()\"></div>' +
-            '           <div class="carousel-3d-prev arrow-right" ng-click=\"vm.goNext()\"></div>' +
+            '         <div class="pilwrap">' +
+            '              <div class="carousel-3d-next arrow-left" ng-click=\"vm.goPrev()\"></div>' + 
+            '            </div>' +
+            '         <div class="pilwrap">' +
+            '             <div class="carousel-3d-prev arrow-right" ng-click=\"vm.goNext()\"></div>' +
+            '         </div>' +
             '       </div>' +
             '   </div>' +
             '</div>',

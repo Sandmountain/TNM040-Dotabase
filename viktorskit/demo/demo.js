@@ -6,11 +6,15 @@ var demo = angular.module('demo', [
         ])
         .controller('AppController', AppController);
 
-    AppController.$inject = ['$filter', '$log', '$scope', 'dotaService', 'abilitiesService'];
+    AppController.$inject = ['$filter', '$log', '$scope', 'dotaService', 'abilitiesService', 'itemsService'];
 
 
 
+<<<<<<< HEAD
     function AppController($filter, $log, $scope, dotaService, abilitiesService) {
+=======
+    function AppController($filter, $log, $scope,  dotaService, abilitiesService, itemsService) {
+>>>>>>> c01ab69e80029b3229f0225474a390bb5bab503a
         var vm = this;
 
         // SLIDES WITH CAPTIONS
@@ -221,6 +225,13 @@ var demo = angular.module('demo', [
             $scope.abilities = data.data;
 
             console.log($scope)
+        })
+        //items
+        var promise3 = itemsService.getItems();
+        promise3.then(function (data)
+        {
+            $scope.items = data.data;
+            console.log($scope)
         });
     }
 
@@ -238,6 +249,21 @@ demo.service("abilitiesService", function ($http, $q)
         return deferred2.promise;
     }
 });
+
+demo.service("itemsService", function ($http, $q)
+{
+    var deferred3 = $q.defer();
+    $http.get('json/items.json').then(function (data)
+    {
+        deferred3.resolve(data);
+    });
+
+    this.getItems = function ()
+    {
+        return deferred3.promise;
+    }
+});
+
 
 demo.service("dotaService", function ($http, $q)
 {
