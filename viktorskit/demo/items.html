@@ -12,36 +12,43 @@
       <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   
    </head>
-   <body>
+   <body ng-controller="AppController as app">
       <!-- navbar -->
       <nav class="navbar navbar-inverse">
          <div class="navbar-header">
             <a class="navbar-brand" href="demo.html">Dotabase</a>
          </div>
-         <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav">
             <li class="active"><a href="demo.html">Home</a></li>
-            <li><a href="#">Heroes</a></li>
+            <li><a href="rss.html">News</a></li>    
             <li><a href="items.html">Items</a></li>
             <li><a href="#">Guides</a></li>
          </ul>
       </nav>
       <!-- navbar slut -->
-   
-      <div id="cont" ng-controller="AppController as app">           
       
-                <div class="col-lg-10 col-centered">
+      <div class="col-md-4 col-centered">
+            <div class="container-1">
+               <span class="icon glyphicon glyphicon-search"></span>
+               <input type="text" id="search" name="filter" ng-model="search"  placeholder="Search..."  />
+               </div>
+         </div>
+         <div class="container-3"></div>
 
+      <div class="container-1" id="cont">           
+               
+                <div class="col-lg-10 col-centered">
                         <div class="col-lg-1 col-md-1 col-xs-4" data-ng-repeat="item in items | filter:search | orderBy:'id' | limitTo: 141">
                           <div class="wrap">
                              <img class="img-rounded" ng-src="images/items/{{item.name}}_lg.png">
-                              <p>{{item.localizedName}}</p>
+                              <p>{{item.localizedName}}, {{item.id}}</p>
                            
                         </div>
-      
-       
           </div>
-      </div>
+      </div>   
+      <div>
 
+      </div>
 
 
 
