@@ -10,7 +10,7 @@ var demo = angular.module('demo', [
 
 
 
-    function AppController($filter, $log, $scope,  dotaService, abilitiesService) {
+    function AppController($filter, $log, $scope, dotaService, abilitiesService) {
         var vm = this;
 
         // SLIDES WITH CAPTIONS
@@ -44,7 +44,7 @@ var demo = angular.module('demo', [
             {'src': 'images/heroes/dazzle_vert.jpg', caption: 'Dazzle'},
             {'src': 'images/heroes/death_prophet_vert.jpg', caption: 'Death Prophet'},
             {'src': 'images/heroes/disruptor_vert.jpg', caption: 'Disruptor'},
-            {'src': 'images/heroes/doom_bringer_vert.jpg', caption: 'Doom Bringer'},
+            {'src': 'images/heroes/doom_vert.jpg', caption: 'Doom Bringer'},
             {'src': 'images/heroes/Dragon_knight_vert.jpg', caption: 'Dragon Knight'},
             {'src': 'images/heroes/drow_ranger_vert.jpg', caption: 'Drow Ranger'},
             {'src': 'images/heroes/earth_spirit_vert.jpg', caption: 'Earth Spirit'},
@@ -172,8 +172,9 @@ var demo = angular.module('demo', [
 
         function filterSlides(){
             vm.filteredSlides = $filter('filter')(vm.slides, vm.filterQuery);
-            if($filter('filter')(vm.slides, vm.filterQuery) == 0)
-            vm.filteredSlides = [{'src': 'images/heroes/error.jpg', caption: 'error'}];
+           /*if($filter('filter')(vm.slides, vm.filterQuery) == 0)
+            vm.filteredSlides = [{'src': 'images/heroes/error.jpg', caption: 'error'}]; */
+
           
         }
 
@@ -187,8 +188,8 @@ var demo = angular.module('demo', [
 
         function selectedClick(index) {
             $log.log('Selected Slide Clicked callback triggered. \n == Slide index is: ' + index + ' ==');
-           // document.write(index);
-          // console.log($scope.heroes);
+
+ 
         }
 
         function slideChanged(index) {
@@ -218,6 +219,7 @@ var demo = angular.module('demo', [
         promise2.then(function (data)
         {
             $scope.abilities = data.data;
+
             console.log($scope)
         });
     }
