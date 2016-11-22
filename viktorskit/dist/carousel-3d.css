@@ -79,7 +79,6 @@
 .carousel-3d-next:hover,
 .carousel-3d-prev:hover {
   cursor: pointer;
-  color: blue;
   
 }
 .carousel-3d-next {
@@ -100,10 +99,7 @@
 }
 
 .arrow-left: hover {
-  display: block;
-  margin: 20px auto;
-  overflow: hidden;
-  position: relative;
+
   color: blue;
 }
 
