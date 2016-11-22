@@ -10,11 +10,8 @@ var demo = angular.module('demo', [
 
 
 
-<<<<<<< HEAD
-    function AppController($filter, $log, $scope, dotaService, abilitiesService) {
-=======
     function AppController($filter, $log, $scope,  dotaService, abilitiesService, itemsService) {
->>>>>>> c01ab69e80029b3229f0225474a390bb5bab503a
+
         var vm = this;
 
         // SLIDES WITH CAPTIONS
