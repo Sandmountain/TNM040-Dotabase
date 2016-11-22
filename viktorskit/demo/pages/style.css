@@ -160,6 +160,87 @@ ul.tabs > li:after{
   right: -17px;
 }
 
+/* items css*/
+.col-centered {
+    float: none;
+    margin: 0 auto 0 auto;
+}
+.wrap{
+    display:inline-block;
+    position:relative;
+    cursor:pointer;
+}
+.wrap p{
+    position:absolute;
+    opacity:0;
+    top:50%;
+    left:-7%;
+    padding:5px;
+    text-align:center;
+    width:112%;
+    font-size:11px;
+    line-height:20px;
+    margin-top:-10px;
+    z-index:3;
+    background:rgba(255,255,255, 0.7);
+    transition:1s;
+}
+
+.wrap img {
+    display:block;
+    width:85px;
+    height:64px;
+    margin:5px;
+    -webkit-transition:opacity 0.26s ease-out;
+    -moz-transition:opacity 0.26s ease-out;
+    -ms-transition:opacity 0.26s ease-out;
+    -o-transition:opacity 0.26s ease-out;
+    transition:opacity 0.26s ease-out;
+    transition:500ms;
+}
+#cont:hover img {
+    opacity:0.5;
+}
+#cont:hover .wrap:hover img {
+    opacity:1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index:2;
+    position:relative;
+    transition:500ms;
+}
+.wrap:hover p {
+    opacity :1;
+}
+.pilwrap div{
+    display:block;
+    width:85px;
+    height:64px;
+    margin:5px;
+    -webkit-transition:opacity 0.26s ease-out;
+    -moz-transition:opacity 0.26s ease-out;
+    -ms-transition:opacity 0.26s ease-out;
+    -o-transition:opacity 0.26s ease-out;
+    transition:opacity 0.26s ease-out;
+    transition:500ms;
+}
+.pilwrap:hover div{
+    opacity:1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index:2;
+    position:relative;
+    transition:500ms;
+}
+
+
+
 /* Clear Fix took for HTML 5 Boilerlate*/
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
