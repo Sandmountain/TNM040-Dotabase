@@ -484,7 +484,7 @@
             this.visible = params.visible || 5;
             this.perspective = params.perspective || 35;
             this.animationSpeed = params.animationSpeed || 350;
-            this.dir = params.dir || 'ltr';
+            this.dir = params.dir || 'rtl';
             this.width = params.width || 360;
             this.height = params.height || 270;
             this.border = params.border || 0;
