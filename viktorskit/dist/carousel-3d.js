@@ -491,7 +491,7 @@
             this.space = params.space || 'auto';
             this.topSpace = params.topSpace || 'auto';
             this.controls = params.controls || true;
-            this.startSlide = params.startSlide || 0;
+            this.startSlide = params.startSlide || 2;
             this.inverseScaling = params.inverseScaling || 300;
             this.autoRotationSpeed = params.autoRotationSpeed || 0;
             this.state = this.states.PENDING;
