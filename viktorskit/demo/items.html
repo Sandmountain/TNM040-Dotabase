@@ -38,18 +38,19 @@
       <div class="container-1" id="cont">           
                
                 <div class="col-lg-10 col-centered">
-                        <div class="col-lg-1 col-md-1 col-xs-4" data-ng-repeat="item in items | filter:search | orderBy:'id' | limitTo: 141">
+                        <div data-ng-repeat="item in items | filter:search | orderBy:'id' | limitTo: 141">
                           <div class="wrap">
-                             <img class="img-rounded" ng-src="images/items/{{item.name}}_lg.png">
-                              <p>{{item.localizedName}}, {{item.id}}</p>
-                           
+                              <img class="img-rounded" ng-src="images/items/{{item.name}}_lg.png">
+                              <div class="tooltip"> 
+                                 <h4>{{item.localizedName}}</h4>
+                                 <p>{{item.info}}</p>
+                              </div>
+
+                              </div>
+                           </div>                    
                         </div>
           </div>
-      </div>   
-      <div>
-
-      </div>
-
+      
 
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

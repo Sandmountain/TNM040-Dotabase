@@ -1,34 +1,3 @@
-@media(min-width: 800px) {
-body{
-  background-image: url("576px_bakgrund.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center; 
-  background-color: black;
-}
-}
-
-@media(min-width: 1100px) {
-body{
-  background-image: url("720px_bakgrund.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center; 
-  background-color: black;
-}
-}
-
-@media(min-width: 1600px) {
-body{
-  background-image: url("1920px_bakgrund.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center; 
-  background-color: black; 
-}
-}
-
-
 .product .img-responsive {
     margin: 0 auto;
 }
@@ -36,16 +5,11 @@ body{
 	margin-bottom: 40px; 
 	margin-top: 3.5%;
 }
-
-.container-3{
-  padding-bottom: 17px;
-}
-
 .container-1{
-  width: 100%;
+  /*width: 100%;
   vertical-align: middle;
   white-space: nowrap;
-  position: relative;
+  position: relative;*/
 }
 .container-1 input#search{
   width: 100%;
@@ -138,7 +102,7 @@ ul.tabs{
 
 ul.tabs > li.active{
   z-index: 2;
-  background: blue; /*Färgen på den aktiva taben */
+  background: green; /*Färgen på den aktiva taben */
 }
 
 ul.tabs > li.active:before{
@@ -205,21 +169,26 @@ ul.tabs > li:after{
     display:inline-block;
     position:relative;
     cursor:pointer;
+    float: left;
 }
-.wrap p{
+.tooltip{
+ 
+    /* Position the tooltip */
+
     position:absolute;
     opacity:0;
-    top:50%;
-    left:-7%;
-    padding:5px;
+    top:100%;
+    left:50%;
+    padding:20px;
     text-align:center;
-    width:112%;
+    width:200%;
     font-size:11px;
-    line-height:20px;
-    margin-top:-10px;
     z-index:3;
-    background:rgba(255,255,255, 0.7);
+    margin-left: -100%;
+    background:rgba(255,255,255, 0.95);
     transition:1s;
+
+    border-radius: 6px;
 }
 
 .wrap img {
@@ -248,7 +217,7 @@ ul.tabs > li:after{
     position:relative;
     transition:500ms;
 }
-.wrap:hover p {
+.wrap:hover .tooltip {
     opacity :1;
 }
 .pilwrap div{
@@ -274,9 +243,6 @@ ul.tabs > li:after{
     position:relative;
     transition:500ms;
 }
-
-
-
 /* Clear Fix took for HTML 5 Boilerlate*/
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
