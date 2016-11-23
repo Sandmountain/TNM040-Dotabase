@@ -1,1177 +1,1711 @@
 [
     {
         "id": "1",
-        "name": "item_blink",
-        "localizedName": "Blink Dagger"
+        "name": "blink",
+        "localizedName": "Blink Dagger",
+        "info": "Teleport to a target point up to 1200 units away. If damage is taken, Blink Dagger cannot be used for 3 seconds."
     },
     {
         "id": "2",
-        "name": "item_blades_of_attack",
-        "localizedName": "Blades of Attack"
+        "name": "blades_of_attack",
+        "localizedName": "Blades of Attack",
+        "info": "<b>Bonus</b>  +9 Attack damage"
     },
     {
         "id": "3",
-        "name": "item_broadsword",
-        "localizedName": "Broadsword"
+        "name": "broadsword",
+        "localizedName": "Broadsword",
+        "info": "Bonus  +18 Attack damage"
     },
     {
         "id": "4",
-        "name": "item_chainmail",
-        "localizedName": "Chainmail"
-    },
+        "name": "chainmail",
+        "localizedName": "Chainmail",
+        "info": "Bonus   +5 Armor"
+            },
     {
         "id": "5",
-        "name": "item_claymore",
-        "localizedName": "Claymore"
+        "name": "claymore",
+        "localizedName": "Claymore",
+        "info": "Bonus    +21 Attack damage"
     },
     {
         "id": "6",
-        "name": "item_helm_of_iron_will",
-        "localizedName": "Helm of Iron Will"
+        "name": "helm_of_iron_will",
+        "localizedName": "Helm of Iron Will",
+        "info": "Bonus    +3 Health regeneretaion
+                          +5 Armor"
     },
     {
         "id": "7",
-        "name": "item_javelin",
-        "localizedName": "Javelin"
+        "name": "javelin",
+        "localizedName": "Javelin",
+        "info": "Grants each attack a chance to deal bonus damage."
     },
     {
         "id": "8",
-        "name": "item_mithril_hammer",
-        "localizedName": "Mithril Hammer"
+        "name": "mithril_hammer",
+        "localizedName": "Mithril Hammer",
+        "info": "Bonus    +24 Attack damage"
     },
     {
         "id": "9",
-        "name": "item_platemail",
-        "localizedName": "Platemail"
+        "name": "platemail",
+        "localizedName": "Platemail",
+        "info": "Bonus     +10 Armor"
     },
     {
         "id": "10",
-        "name": "item_quarterstaff",
-        "localizedName": "Quarterstaff"
+        "name": "quarterstaff",
+        "localizedName": "Quarterstaff",
+        "info": "Bonus     +10 Attack damage
+                           +10 Attack speed"
     },
     {
         "id": "11",
-        "name": "item_quelling_blade",
-        "localizedName": "Quelling Blade"
+        "name": "quelling_blade",
+        "localizedName": "Quelling Blade",
+        "info": "Destroy a target tree or ward. Chop cast range is increased when targetting wards."
     },
     {
         "id": "12",
-        "name": "item_ring_of_protection",
-        "localizedName": "Ring of Protection"
+        "name": "ring_of_protection",
+        "localizedName": "Ring of Protection",
+        "info": "Bonus     +2 Armor"
     },
     {
         "id": "182",
-        "name": "item_stout_shield",
-        "localizedName": "Stout Shield"
+        "name": "stout_shield",
+        "localizedName": "Stout Shield",
+        "info": "Gives a chance to block damage based on whether the equipped hero is melee or ranged."
     },
     {
         "id": "13",
-        "name": "item_gauntlets",
-        "localizedName": "Gauntlets of Strength"
+        "name": "gauntlets",
+        "localizedName": "Gauntlets of Strength",
+        "info": "Bonus    +3 Strength"
     },
     {
         "id": "14",
-        "name": "item_slippers",
-        "localizedName": "Slippers of Agility"
+        "name": "slippers",
+        "localizedName": "Slippers of Agility",
+        "info": "Bonus    +3 Agility"
     },
     {
         "id": "15",
-        "name": "item_mantle",
-        "localizedName": "Mantle of Intelligence"
+        "name": "mantle",
+        "localizedName": "Mantle of Intelligence",
+        "info": "Bonus    +3 Intelligence"
     },
     {
         "id": "16",
-        "name": "item_branches",
-        "localizedName": "Iron Branch"
+        "name": "branches",
+        "localizedName": "Iron Branch",
+        "info": "Targets the ground to plant a happy little tree that lasts for 20 seconds"
     },
     {
         "id": "17",
-        "name": "item_belt_of_strength",
-        "localizedName": "Belt of Strength"
+        "name": "belt_of_strength",
+        "localizedName": "Belt of Strength",
+        "info": "Bonus    +6 Strength"
     },
     {
         "id": "18",
-        "name": "item_boots_of_elves",
-        "localizedName": "Band of Elvenskin"
+        "name": "boots_of_elves",
+        "localizedName": "Band of Elvenskin",
+        "info": "Bonus    +6 Agility"
     },
     {
         "id": "19",
-        "name": "item_robe",
-        "localizedName": "Robe of the Magi"
+        "name": "robe",
+        "localizedName": "Robe of the Magi",
+        "info": "Bonus    +6 Intelligence"
     },
     {
         "id": "20",
-        "name": "item_circlet",
-        "localizedName": "Circlet"
+        "name": "circlet",
+        "localizedName": "Circlet",
+        "info": "Bonus    +2 Strength, +2 Agility, +2 Intelligence"
     },
     {
         "id": "21",
-        "name": "item_ogre_axe",
-        "localizedName": "Ogre Club"
+        "name": "ogre_axe",
+        "localizedName": "Ogre Club",
+        "info": "Bonus    +10 Strength"
     },
     {
         "id": "22",
-        "name": "item_blade_of_alacrity",
-        "localizedName": "Blade of Alacrity"
+        "name": "blade_of_alacrity",
+        "localizedName": "Blade of Alacrity",
+        "info": "Bonus    +10 Agility"
     },
     {
         "id": "23",
-        "name": "item_staff_of_wizardry",
-        "localizedName": "Staff of Wizardry"
+        "name": "staff_of_wizardry",
+        "localizedName": "Staff of Wizardry",
+        "info": "Bonus    +10 Intelligence"
     },
     {
         "id": "24",
-        "name": "item_ultimate_orb",
-        "localizedName": "Ultimate Orb"
+        "name": "ultimate_orb",
+        "localizedName": "Ultimate Orb",
+        "info": "Bonus  +10 Strength
+                        +10 Agility
+                        +10 Intelligence"
     },
     {
         "id": "25",
-        "name": "item_gloves",
-        "localizedName": "Gloves of Haste"
+        "name": "gloves",
+        "localizedName": "Gloves of Haste",
+        "info": "Bonus Grants it's wearer +20 Attack speed"
     },
     {
         "id": "26",
-        "name": "item_lifesteal",
-        "localizedName": "Morbid Mask"
+        "name": "lifesteal",
+        "localizedName": "Morbid Mask",
+        "info": "Heals the attacker for a percentage of attack damage dealt."
     },
     {
         "id": "27",
-        "name": "item_ring_of_regen",
-        "localizedName": "Ring of Regen"
+        "name": "ring_of_regen",
+        "localizedName": "Ring of Regen",
+        "info": "Bonus    +2 Health regeneretaion"
     },
     {
         "id": "28",
-        "name": "item_sobi_mask",
-        "localizedName": "Sage's Mask"
+        "name": "sobi_mask",
+        "localizedName": "Sage's Mask",
+        "info": "Bonus    +50% Mana regeneration"
     },
     {
         "id": "29",
-        "name": "item_boots",
-        "localizedName": "Boots of Speed"
+        "name": "boots",
+        "localizedName": "Boots of Speed",
+        "info": "Bonus    +45 Movement Speed"
     },
     {
         "id": "30",
-        "name": "item_gem",
-        "localizedName": "Gem of True Sight"
+        "name": "gem",
+        "localizedName": "Gem of True Sight",
+        "info": "Grants the wearer the ability of true sight thus reveling invisible units"
     },
     {
         "id": "31",
-        "name": "item_cloak",
-        "localizedName": "Cloak"
+        "name": "cloak",
+        "localizedName": "Cloak",
+        "info": "Bonus    +15 Magic resistance"
     },
     {
         "id": "32",
-        "name": "item_talisman_of_evasion",
-        "localizedName": "Talisman of Evasion"
+        "name": "talisman_of_evasion",
+        "localizedName": "Talisman of Evasion",
+        "info": "Bonus    +25% Evasion"
     },
     {
         "id": "33",
-        "name": "item_cheese",
-        "localizedName": "Cheese"
+        "name": "cheese",
+        "localizedName": "Cheese",
+        "info": "Instantly restores health and mana."
     },
     {
         "id": "34",
-        "name": "item_magic_stick",
-        "localizedName": "Magic Stick"
+        "name": "magic_stick",
+        "localizedName": "Magic Stick",
+        "info": "Instantly restores health and mana based on the number of charges stored. Gains a charge (max 10) whenever a nearby visible enemy uses an ability."
     },
     {
         "id": "35",
-        "name": "item_recipe_magic_wand",
-        "localizedName": "Magic Wand"
+        "name": "recipe_magic_wand",
+        "localizedName": "Magic Wand",
+        "info": "Instantly restores health and mana based on the number of charges stored. Gains a charge (max 17) whenever a nearby visible enemy uses an ability."
     },
-    {
-        "id": "36",
-        "name": "item_magic_wand",
-        "localizedName": "Magic Wand"
-    },
+
     {
         "id": "37",
-        "name": "item_ghost",
-        "localizedName": "Ghost Scepter"
+        "name": "ghost",
+        "localizedName": "Ghost Scepter",
+        "info": "Enter ghost form, becoming immune to physical damage, yet unable to attack and taking 40% extra magic damage."
+
     },
     {
         "id": "38",
-        "name": "item_clarity",
-        "localizedName": "Clarity"
+        "name": "clarity",
+        "localizedName": "Clarity",
+        "info": "Restores mana to the target unit over time. If the unit is attacked, the effect is lost."
     },
     {
         "id": "39",
-        "name": "item_flask",
-        "localizedName": "Healing Salve"
+        "name": "flask",
+        "localizedName": "Healing Salve",
+        "info": "Restores health to the target unit over time. If the unit is attacked, the effect is lost."
     },
     {
         "id": "40",
-        "name": "item_dust",
-        "localizedName": "Dust of Appearance"
+        "name": "dust",
+        "localizedName": "Dust of Appearance",
+        "info": "Reveals and slows invisible Heroes in a nearby area."
     },
     {
         "id": "41",
-        "name": "item_bottle",
-        "localizedName": "Bottle"
+        "name": "bottle",
+        "localizedName": "Bottle",
+        "info": "Consumes a charge to restore Health and Mana over time. Healing stops if attacked. Bottle can be refilled at your team's fountain. If Bottle does not have full charges and is placed on a courier, the courier will move 30% slower."
     },
     {
         "id": "42",
-        "name": "item_ward_observer",
-        "localizedName": "Observer Ward"
+        "name": "ward_observer",
+        "localizedName": "Observer Ward",
+        "info": "Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes.
+Hold Control to give one Observer Ward to an allied hero."
+
     },
     {
         "id": "43",
-        "name": "item_ward_sentry",
-        "localizedName": "Sentry Ward"
+        "name": "ward_sentry",
+        "localizedName": "Sentry Ward",
+        "info": "Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within its range. Lasts 4 minutes.
+Hold Control to give one Sentry Ward to an allied hero"
     },
     {
         "id": "44",
-        "name": "item_tango",
-        "localizedName": "Tango"
+        "name": "tango",
+        "localizedName": "Tango",
+        "info": "Consume a target tree or ward to gradually restore health.
+Comes with 4 charges. Can be used on an allied hero to give them one Tango."
     },
     {
         "id": "241",
-        "name": "item_tango_single",
-        "localizedName": "Tango (Shared)"
+        "name": "tango_single",
+        "localizedName": "Tango (Shared)",
+        "info": "Consume a target tree or ward to gradually restore health.
+Comes with 4 charges. Can be used on an allied hero to give them one Tango."
     },
     {
         "id": "45",
-        "name": "item_courier",
-        "localizedName": "Animal Courier"
+        "name": "courier",
+        "localizedName": "Animal Courier",
+        "info:" "summons an animal companion to carry items for you and your team"
     },
     {
         "id": "46",
-        "name": "item_tpscroll",
-        "localizedName": "Town Portal Scroll"
-    },
-    {
-        "id": "47",
-        "name": "item_recipe_travel_boots",
-        "localizedName": "Boots of Travel"
+        "name": "tpscroll",
+        "localizedName": "Town Portal Scroll",
+        "info": "Teleports you to a friendly structure"
     },
     {
         "id": "48",
-        "name": "item_travel_boots",
-        "localizedName": "Boots of Travel"
+        "name": "travel_boots",
+        "localizedName": "Boots of Travel",
+        "info": "info" "Bonus     +70 Movement Speed
+        Also gives it's wearer the ability to teleport to any friendly unit(except Heroes)"
     },
-    {
-        "id": "49",
-        "name": "item_recipe_phase_boots",
-        "localizedName": "Phase Boots"
-    },
+
     {
         "id": "50",
-        "name": "item_phase_boots",
-        "localizedName": "Phase Boots"
+        "name": "phase_boots",
+        "localizedName": "Phase Boots",
+        "info": "Gives increased movement speed and lets you move through units. The increased movement speed is based on whether the equipped hero is melee or ranged."
     },
     {
         "id": "51",
-        "name": "item_demon_edge",
-        "localizedName": "Demon Edge"
+        "name": "demon_edge",
+        "localizedName": "Demon Edge",
+        "info": "Bonus    +24 Attack damage"
     },
     {
         "id": "52",
-        "name": "item_eagle",
-        "localizedName": "Eaglesong"
+        "name": "eagle",
+        "localizedName": "Eaglesong",
+        "info": "Bonus    +25 Agility"
     },
     {
         "id": "53",
-        "name": "item_reaver",
-        "localizedName": "Reaver"
+        "name": "reaver",
+        "localizedName": "Reaver",
+        "info": "Bonus    +25 Strength"
     },
     {
         "id": "54",
-        "name": "item_relic",
-        "localizedName": "Sacred Relic"
+        "name": "relic",
+        "localizedName": "Sacred Relic",
+        "info": "Bonus    +60 Attack damage"
     },
     {
         "id": "55",
-        "name": "item_hyperstone",
-        "localizedName": "Hyperstone"
+        "name": "hyperstone",
+        "localizedName": "Hyperstone",
+        "info": "Bonus    +55 Attack speed",
+
     },
     {
         "id": "56",
-        "name": "item_ring_of_health",
-        "localizedName": "Ring of Health"
+        "name": "ring_of_health",
+        "localizedName": "Ring of Health",
+        "info": "Bonus:   +6 Health regeneretaion"
     },
     {
         "id": "57",
-        "name": "item_void_stone",
-        "localizedName": "Void Stone"
+        "name": "void_stone",
+        "localizedName": "Void Stone",
+        "info": "Bonus    +100% Mana regeneration"
     },
     {
         "id": "58",
-        "name": "item_mystic_staff",
-        "localizedName": "Mystic Staff"
+        "name": "mystic_staff",
+        "localizedName": "Mystic Staff",
+        "info": "Bonus    +25 Intelligence" 
     },
     {
         "id": "59",
-        "name": "item_energy_booster",
-        "localizedName": "Energy Booster"
+        "name": "energy_booster",
+        "localizedName": "Energy Booster",
+        "info": "Bonus    +250 Mana"
     },
     {
         "id": "60",
-        "name": "item_point_booster",
-        "localizedName": "Point Booster"
-    },
+        "name": "point_booster",
+        "localizedName": "Point Booster",
+        "info": "Bonus    +175 Health, +175 Mana"
+    }, 
     {
         "id": "61",
-        "name": "item_vitality_booster",
-        "localizedName": "Vitality Booster"
-    },
-    {
-        "id": "62",
-        "name": "item_recipe_power_treads",
-        "localizedName": "Power Treads"
+        "name": "vitality_booster",
+        "localizedName": "Vitality Booster",
+        "info": "Bonus    +250 Health"
     },
     {
         "id": "63",
-        "name": "item_power_treads",
-        "localizedName": "Power Treads"
-    },
-    {
-        "id": "64",
-        "name": "item_recipe_hand_of_midas",
-        "localizedName": "Hand of Midas"
+        "name": "power_treads",
+        "localizedName": "Power Treads",
+        "info": "Changes selected attribute between Strength, Agility and Intelligence"
     },
     {
         "id": "65",
-        "name": "item_hand_of_midas",
-        "localizedName": "Hand of Midas"
-    },
-    {
-        "id": "66",
-        "name": "item_recipe_oblivion_staff",
-        "localizedName": "Oblivion Staff"
+        "name": "hand_of_midas",
+        "localizedName": "Hand of Midas",
+        "info": "Kills a non-hero target for 190 gold and 2.5x experience. Cannot be used on Ancient Creeps."
     },
     {
         "id": "67",
-        "name": "item_oblivion_staff",
-        "localizedName": "Oblivion Staff"
-    },
-    {
-        "id": "68",
-        "name": "item_recipe_pers",
-        "localizedName": "Perseverance"
+        "name": "oblivion_staff",
+        "localizedName": "Oblivion Staff",
+        "info": "Bonus    +6 Intelligence, +75% Mana regeneration, +15 Attack damage, +10 Attack Speed"
     },
     {
         "id": "69",
-        "name": "item_pers",
-        "localizedName": "Perseverance"
+        "name": "pers",
+        "localizedName": "Perseverance",
+        "info": "Bonus    +6 Health regeneration, +125% Mana regeneration, +10 Attack damage"
     },
-    {
-        "id": "70",
-        "name": "item_recipe_poor_mans_shield",
-        "localizedName": "Poor Man's Shield"
-    },
+
     {
         "id": "71",
-        "name": "item_poor_mans_shield",
-        "localizedName": "Poor Man's Shield"
-    },
-    {
-        "id": "72",
-        "name": "item_recipe_bracer",
-        "localizedName": "Bracer"
+        "name": "poor_mans_shield",
+        "localizedName": "Poor Man's Shield",
+        "info": "Blocks physical attack damage based on whether the equipped hero is ranged or melee. Poor Man's Shield will always block attacks from enemy Heroes, but has a 53% chance to block damage from creeps."
     },
     {
         "id": "73",
-        "name": "item_bracer",
-        "localizedName": "Bracer"
-    },
-    {
-        "id": "74",
-        "name": "item_recipe_wraith_band",
-        "localizedName": "Wraith Band"
+        "name": "bracer",
+        "localizedName": "Bracer",
+        "info": "Bonus   +6 Strength, +3 Agility, +3 Intelligence, +3 Attack damage"
     },
     {
         "id": "75",
-        "name": "item_wraith_band",
-        "localizedName": "Wraith Band"
-    },
-    {
-        "id": "76",
-        "name": "item_recipe_null_talisman",
-        "localizedName": "Null Talisman"
+        "name": "wraith_band",
+        "localizedName": "Wraith Band",
+        "info": "Bonus   +6 Agility, +3 Strength, +3 Intelligence, +3 Attack damage"
     },
     {
         "id": "77",
-        "name": "item_null_talisman",
-        "localizedName": "Null Talisman"
-    },
-    {
-        "id": "78",
-        "name": "item_recipe_mekansm",
-        "localizedName": "Mekansm"
+        "name": "null_talisman",
+        "localizedName": "Null Talisman",
+        "info": "Bonus    +6 Intelligence, +3 Strength, +3 Agility, +3 Attack damage"
     },
     {
         "id": "79",
-        "name": "item_mekansm",
-        "localizedName": "Mekansm"
+        "name": "mekansm",
+        "localizedName": "Mekansm",
+        "info": "Heals 250 health and gives +2 armor to allied units in a 900 radius."
     },
-    {
-        "id": "80",
-        "name": "item_recipe_vladmir",
-        "localizedName": "Vladmir's Offering"
-    },
+
     {
         "id": "81",
-        "name": "item_vladmir",
-        "localizedName": "Vladmir's Offering"
+        "name": "vladmir",
+        "localizedName": "Vladmir's Offering",
+        "info": "Grants lifesteal, health regeneration, mana regeneration, bonus attack damage, and armor to allies in a 900 radius. The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged.
+                 Multiple instances of Vladmir's Aura do not stack"
     },
     {
         "id": "84",
-        "name": "item_flying_courier",
-        "localizedName": "Flying Courier"
+        "name": "flying_courier",
+        "localizedName": "Flying Courier",
+        "info": "Upgrades your team's Animal Courier to a Flying Courier, granting it swift, unobstructed movement to carry items to and from your team's base."
     },
-    {
-        "id": "85",
-        "name": "item_recipe_buckler",
-        "localizedName": "Buckler"
-    },
+
     {
         "id": "86",
-        "name": "item_buckler",
-        "localizedName": "Buckler"
-    },
-    {
-        "id": "87",
-        "name": "item_recipe_ring_of_basilius",
-        "localizedName": "Ring of Basilius"
+        "name": "buckler",
+        "localizedName": "Buckler",
+        "info": "Activte: Gives +2 armor to all allied units in a 900 radius. Lasts 25 seconds on heroes, 30 seconds on units."
     },
     {
         "id": "88",
-        "name": "item_ring_of_basilius",
-        "localizedName": "Ring of Basilius"
-    },
-    {
-        "id": "89",
-        "name": "item_recipe_pipe",
-        "localizedName": "Pipe of Insight"
+        "name": "ring_of_basilius",
+        "localizedName": "Ring of Basilius",
+        "info": "Grants mana regeneration and armor in a 900 area of effect.
+                 Toggle whether the aura affects other non-hero units.
+                 Multiple instances of Basilius Aura do not stack"
     },
     {
         "id": "90",
-        "name": "item_pipe",
-        "localizedName": "Pipe of Insight"
-    },
-    {
-        "id": "91",
-        "name": "item_recipe_urn_of_shadows",
-        "localizedName": "Urn of Shadows Recipe"
+        "name": "pipe",
+        "localizedName": "Pipe of Insight",
+        "info": "Gives a shield that blocks 400 spell damage to all allies in a 900 radius."
     },
     {
         "id": "92",
-        "name": "item_urn_of_shadows",
-        "localizedName": "Urn of Shadows"
-    },
-    {
-        "id": "93",
-        "name": "item_recipe_headdress",
-        "localizedName": "Headdress"
+        "name": "urn_of_shadows",
+        "localizedName": "Urn of Shadows",
+        "info": "Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero or tower.
+                 Gains charges every time an enemy hero dies within 1400 units. Only the closest Urn to the dying hero will gain a charge."
     },
     {
         "id": "94",
-        "name": "item_headdress",
-        "localizedName": "Headdress"
-    },
-    {
-        "id": "95",
-        "name": "item_recipe_sheepstick",
-        "localizedName": "Scythe of Vyse"
+        "name": "headdress",
+        "localizedName": "Headdress",
+        "info": "Restores health to allies in a 900 unit radius.
+                 Multiple instances of Regeneration Aura do not stack."
     },
     {
         "id": "96",
-        "name": "item_sheepstick",
-        "localizedName": "Scythe of Vyse"
-    },
-    {
-        "id": "97",
-        "name": "item_recipe_orchid",
-        "localizedName": "Orchid Malevolence"
+        "name": "sheepstick",
+        "localizedName": "Scythe of Vyse",
+        "info": "Turns a target unit into a harmless critter for 3.5 seconds. Instantly destroys illusions."
     },
     {
         "id": "98",
-        "name": "item_orchid",
-        "localizedName": "Orchid Malevolence"
-    },
-    {
-        "id": "99",
-        "name": "item_recipe_cyclone",
-        "localizedName": "Eul's Scepter of Divinity"
+        "name": "orchid",
+        "localizedName": "Orchid Malevolence",
+        "info": "Silences the target unit for 5 seconds and amplifies the damage it takes by 30%."
     },
     {
         "id": "100",
-        "name": "item_cyclone",
-        "localizedName": "Eul's Scepter of Divinity"
-    },
-    {
-        "id": "101",
-        "name": "item_recipe_force_staff",
-        "localizedName": "Force Staff"
+        "name": "cyclone",
+        "localizedName": "Eul's Scepter of Divinity",
+        "info": "Sweeps a target unit up into cyclone, making them invulnerable for 2.5 seconds. Cyclone can be cast on yourself. Enemy units take 50 magical damage upon landing."
     },
     {
         "id": "102",
-        "name": "item_force_staff",
-        "localizedName": "Force Staff"
-    },
-    {
-        "id": "103",
-        "name": "item_recipe_dagon",
-        "localizedName": "Dagon"
-    },
-    {
-        "id": "197",
-        "name": "item_recipe_dagon_2",
-        "localizedName": "Dagon"
-    },
-    {
-        "id": "198",
-        "name": "item_recipe_dagon_3",
-        "localizedName": "Dagon"
-    },
-    {
-        "id": "199",
-        "name": "item_recipe_dagon_4",
-        "localizedName": "Dagon"
-    },
-    {
-        "id": "200",
-        "name": "item_recipe_dagon_5",
-        "localizedName": "Dagon"
+        "name": "force_staff",
+        "localizedName": "Force Staff",
+        "info": "Pushes any target unit 600 units in the direction it is facing. Double click to instantly cast Force on yourself."
     },
     {
         "id": "104",
-        "name": "item_dagon",
-        "localizedName": "Dagon"
+        "name": "dagon",
+        "localizedName": "Dagon",
+        "info": "Emits a powerful burst of magical damage upon a targeted enemy unit doing 400 damage"
     },
     {
         "id": "201",
-        "name": "item_dagon_2",
-        "localizedName": "Dagon"
+        "name": "dagon_2",
+        "localizedName": "Dagon",
+        "info": "Emits a powerful burst of magical damage upon a targeted enemy unit doing 500 damage"
     },
     {
         "id": "202",
-        "name": "item_dagon_3",
-        "localizedName": "Dagon"
+        "name": "dagon_3",
+        "localizedName": "Dagon",
+        "info": "Emits a powerful burst of magical damage upon a targeted enemy unit doing 600 damage"
     },
     {
         "id": "203",
-        "name": "item_dagon_4",
-        "localizedName": "Dagon"
+        "name": "dagon_4",
+        "localizedName": "Dagon",
+        "info": "Emits a powerful burst of magical damage upon a targeted enemy unit doing 700 damage"
     },
     {
         "id": "204",
-        "name": "item_dagon_5",
-        "localizedName": "Dagon"
-    },
-    {
-        "id": "105",
-        "name": "item_recipe_necronomicon",
-        "localizedName": "Necronomicon"
-    },
-    {
-        "id": "191",
-        "name": "item_recipe_necronomicon_2",
-        "localizedName": "Necronomicon"
-    },
-    {
-        "id": "192",
-        "name": "item_recipe_necronomicon_3",
-        "localizedName": "Necronomicon"
+        "name": "dagon_5",
+        "localizedName": "Dagon",
+        "info": "Emits a powerful burst of magical damage upon a targeted enemy unit doing 800 damage"
     },
     {
         "id": "106",
-        "name": "item_necronomicon",
-        "localizedName": "Necronomicon"
+        "name": "necronomicon",
+        "localizedName": "Necronomicon",
+        "info": "Summons a Warrior and an Archer to fight for you for 40 seconds, whose strength and abilities increase as Necronomicon is upgraded. Warrior gains True Sight at level 3."
     },
     {
         "id": "193",
-        "name": "item_necronomicon_2",
-        "localizedName": "Necronomicon"
+        "name": "necronomicon_2",
+        "localizedName": "Necronomicon",
+        "info": "Summons a Warrior and an Archer to fight for you for 40 seconds, whose strength and abilities increase as Necronomicon is upgraded. Warrior gains True Sight at level 3."
     },
     {
         "id": "194",
-        "name": "item_necronomicon_3",
-        "localizedName": "Necronomicon"
-    },
-    {
-        "id": "107",
-        "name": "item_recipe_ultimate_scepter",
-        "localizedName": "Aghanim's Scepter"
+        "name": "necronomicon_3",
+        "localizedName": "Necronomicon",
+        "info": "Summons a Warrior and an Archer to fight for you for 40 seconds, whose strength and abilities increase as Necronomicon is upgraded. Warrior gains True Sight at level 3."
     },
     {
         "id": "108",
-        "name": "item_ultimate_scepter",
-        "localizedName": "Aghanim's Scepter"
-    },
-    {
-        "id": "109",
-        "name": "item_recipe_refresher",
-        "localizedName": "Refresher Orb"
+        "name": "ultimate_scepter",
+        "localizedName": "Aghanim's Scepter",
+        "info": "Upgrades the ultimate and some abilities of certain heroes"
     },
     {
         "id": "110",
-        "name": "item_refresher",
-        "localizedName": "Refresher Orb"
-    },
-    {
-        "id": "111",
-        "name": "item_recipe_assault",
-        "localizedName": "Assault Cuirass"
+        "name": "refresher",
+        "localizedName": "Refresher Orb",
+        "info": "Resets the cooldowns of all your items and abilities."
     },
     {
         "id": "112",
-        "name": "item_assault",
-        "localizedName": "Assault Cuirass"
-    },
-    {
-        "id": "113",
-        "name": "item_recipe_heart",
-        "localizedName": "Heart of Tarrasque"
+        "name": "assault",
+        "localizedName": "Assault Cuirass",
+        "info": "Grants attack speed and armor to nearby allied units and structures, and decreases the armor of nearby enemies.
+Multiple instances of Assault Aura do not stack."
     },
     {
         "id": "114",
-        "name": "item_heart",
-        "localizedName": "Heart of Tarrasque"
-    },
-    {
-        "id": "115",
-        "name": "item_recipe_black_king_bar",
-        "localizedName": "Black King Bar"
+        "name": "heart",
+        "localizedName": "Heart of Tarrasque",
+        "info": "Restores a percentage of max health per second. If damage is taken from an enemy hero or Roshan, this ability is disabled for 5 seconds for melee heroes, or 7 seconds for ranged heroes."
     },
     {
         "id": "116",
-        "name": "item_black_king_bar",
-        "localizedName": "Black King Bar"
+        "name": "black_king_bar",
+        "localizedName": "Black King Bar",
+        "info": "Grants Spell Immunity and 100% Magic Damage Resistance. Duration and cooldown decrease with each use. Some abilities are able to disable through Avatar."
     },
     {
         "id": "117",
-        "name": "item_aegis",
-        "localizedName": "Aegis of the Immortal"
-    },
-    {
-        "id": "118",
-        "name": "item_recipe_shivas_guard",
-        "localizedName": "Shiva's Guard"
+        "name": "aegis",
+        "localizedName": "Aegis of the Immortal",
+        "info": "Brings you to life with full health and mana 5 seconds after you die, at the location where you died. Reincarnation must be used within 5 minutes or Aegis of the Immortal disappears. If it expires, it will heal you over 5 seconds (dispels on damage)."
     },
     {
         "id": "119",
-        "name": "item_shivas_guard",
-        "localizedName": "Shiva's Guard"
-    },
-    {
-        "id": "120",
-        "name": "item_recipe_bloodstone",
-        "localizedName": "Bloodstone"
+        "name": "shivas_guard",
+        "localizedName": "Shiva's Guard",
+        "info": "Emits a freezing wave that deals 200 magical damage to enemies and slows their movement by 40% for 4 seconds."
     },
     {
         "id": "121",
-        "name": "item_bloodstone",
-        "localizedName": "Bloodstone"
-    },
-    {
-        "id": "122",
-        "name": "item_recipe_sphere",
-        "localizedName": "Linken's Sphere"
+        "name": "bloodstone",
+        "localizedName": "Bloodstone",
+        "info": " Activate: Instantly causes you to die."
     },
     {
         "id": "123",
-        "name": "item_sphere",
-        "localizedName": "Linken's Sphere"
-    },
-    {
-        "id": "124",
-        "name": "item_recipe_vanguard",
-        "localizedName": "Vanguard"
+        "name": "sphere",
+        "localizedName": "Linken's Sphere",
+        "info": "Blocks most targeted spells once every 13 seconds."
     },
     {
         "id": "125",
-        "name": "item_vanguard",
-        "localizedName": "Vanguard"
-    },
-    {
-        "id": "126",
-        "name": "item_recipe_blade_mail",
-        "localizedName": "Blade Mail"
+        "name": "vanguard",
+        "localizedName": "Vanguard",
+        "info": "Makes the wielder block damage from each incoming attack based on whether the equipped hero is melee or ranged."
     },
     {
         "id": "127",
-        "name": "item_blade_mail",
-        "localizedName": "Blade Mail"
-    },
-    {
-        "id": "128",
-        "name": "item_recipe_soul_booster",
-        "localizedName": "Soul Booster"
+        "name": "blade_mail",
+        "localizedName": "Blade Mail",
+        "info": "Reflects any damage taken back to the unit that dealt the damage. Lasts 4.5 seconds."
     },
     {
         "id": "129",
-        "name": "item_soul_booster",
-        "localizedName": "Soul Booster"
-    },
-    {
-        "id": "130",
-        "name": "item_recipe_hood_of_defiance",
-        "localizedName": "Hood of Defiance"
+        "name": "soul_booster",
+        "localizedName": "Soul Booster",
+        "info": "Bonus    +425 Health, +425 Mana, +50% Mana regeneration"
     },
     {
         "id": "131",
-        "name": "item_hood_of_defiance",
-        "localizedName": "Hood of Defiance"
-    },
-    {
-        "id": "132",
-        "name": "item_recipe_rapier",
-        "localizedName": "Divine Rapier"
+        "name": "hood_of_defiance",
+        "localizedName": "Hood of Defiance",
+        "info": "Creates a spell shield that absorbs up to 325 magical damage."
     },
     {
         "id": "133",
-        "name": "item_rapier",
-        "localizedName": "Divine Rapier"
-    },
-    {
-        "id": "134",
-        "name": "item_recipe_monkey_king_bar",
-        "localizedName": "Monkey King Bar"
+        "name": "rapier",
+        "localizedName": "Divine Rapier",
+        "info": "Bonus    +330 Attack damage"
     },
     {
         "id": "135",
-        "name": "item_monkey_king_bar",
-        "localizedName": "Monkey King Bar"
-    },
-    {
-        "id": "136",
-        "name": "item_recipe_radiance",
-        "localizedName": "Radiance"
+        "name": "monkey_king_bar",
+        "localizedName": "Monkey King Bar",
+        "info": "Activate: makes the user spell imune for 10/9/8/7/6/5 seconds" 
     },
     {
         "id": "137",
-        "name": "item_radiance",
-        "localizedName": "Radiance"
-    },
-    {
-        "id": "138",
-        "name": "item_recipe_butterfly",
-        "localizedName": "Butterfly"
+        "name": "radiance",
+        "localizedName": "Radiance",
+        "info": "When active, scorches nearby enemies for 50 damage per second and blinds them, causing them to miss 17% of their attacks."
     },
     {
         "id": "139",
-        "name": "item_butterfly",
-        "localizedName": "Butterfly"
-    },
-    {
-        "id": "140",
-        "name": "item_recipe_greater_crit",
-        "localizedName": "Daedalus"
+        "name": "butterfly",
+        "localizedName": "Butterfly",
+        "info": "Trade evasion for 35% additional movement speed for 4 seconds."
     },
     {
         "id": "141",
-        "name": "item_greater_crit",
-        "localizedName": "Daedalus"
-    },
-    {
-        "id": "142",
-        "name": "item_recipe_basher",
-        "localizedName": "Skull Basher"
+        "name": "greater_crit",
+        "localizedName": "Daedalus",
+        "info": "Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings."
     },
     {
         "id": "143",
-        "name": "item_basher",
-        "localizedName": "Skull Basher"
-    },
-    {
-        "id": "144",
-        "name": "item_recipe_bfury",
-        "localizedName": "Battle Fury"
+        "name": "basher",
+        "localizedName": "Skull Basher",
+        "info": "Grants each attack a chance to stun the target for 1.4 seconds and deal 85 bonus damage, based on whether the equipped hero is ranged or melee."
     },
     {
         "id": "145",
-        "name": "item_bfury",
-        "localizedName": "Battle Fury"
-    },
-    {
-        "id": "146",
-        "name": "item_recipe_manta",
-        "localizedName": "Manta Style"
+        "name": "bfury",
+        "localizedName": "Battle Fury",
+        "info": "Destroy a target tree or ward. Chop cast range is increased when targetting wards."
     },
     {
         "id": "147",
-        "name": "item_manta",
-        "localizedName": "Manta Style"
-    },
-    {
-        "id": "148",
-        "name": "item_recipe_lesser_crit",
-        "localizedName": "Crystalys"
+        "name": "manta",
+        "localizedName": "Manta Style",
+        "info": "Creates 2 images of your hero that last 20 seconds. Melee heroes have a 30 second cooldown on this ability, while for Ranged heroes the cooldown is 45 seconds.
+                 Melee images deal 33% damage and take 350% damage, while Ranged images deal 28% and take 400% damage."
     },
     {
         "id": "149",
-        "name": "item_lesser_crit",
-        "localizedName": "Crystalys"
-    },
-    {
-        "id": "150",
-        "name": "item_recipe_armlet",
-        "localizedName": "Armlet of Mordiggian"
+        "name": "lesser_crit",
+        "localizedName": "Crystalys",
+        "info": "Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings."
     },
     {
         "id": "151",
-        "name": "item_armlet",
-        "localizedName": "Armlet of Mordiggian"
-    },
-    {
-        "id": "183",
-        "name": "item_recipe_invis_sword",
-        "localizedName": "Shadow Blade"
+        "name": "armlet",
+        "localizedName": "Armlet of Mordiggian",
+        "info": "When active, Unholy Strength grants +31 damage and +25 strength, but drains 45 health per second. You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated."
     },
     {
         "id": "152",
-        "name": "item_invis_sword",
-        "localizedName": "Shadow Blade"
-    },
-    {
-        "id": "153",
-        "name": "item_recipe_sange_and_yasha",
-        "localizedName": "Sange and Yasha"
+        "name": "invis_sword",
+        "localizedName": "Shadow Blade",
+        "info": "Makes you invisible until the duration ends, or until you attack or cast a spell. While Shadow Walk is active, you move 20% faster and can move through units. If attacking to end the invisibility, you gain 175 bonus damage on that attack. Lasts 14 seconds."
     },
     {
         "id": "154",
-        "name": "item_sange_and_yasha",
-        "localizedName": "Sange and Yasha"
-    },
-    {
-        "id": "155",
-        "name": "item_recipe_satanic",
-        "localizedName": "Satanic"
+        "name": "sange_and_yasha",
+        "localizedName": "Sange and Yasha",
+        "info": "Each attack has a chance to slow the enemy's movement and attack speed for 5 seconds. The slow is based on whether the equipped hero is melee or ranged."
     },
     {
         "id": "156",
-        "name": "item_satanic",
-        "localizedName": "Satanic"
-    },
-    {
-        "id": "157",
-        "name": "item_recipe_mjollnir",
-        "localizedName": "Mjollnir"
+        "name": "satanic",
+        "localizedName": "Satanic",
+        "info": "Increases Lifesteal percentage to 200% for 4.5 seconds."
     },
     {
         "id": "158",
-        "name": "item_mjollnir",
-        "localizedName": "Mjollnir"
-    },
-    {
-        "id": "159",
-        "name": "item_recipe_skadi",
-        "localizedName": "Eye of Skadi"
+        "name": "mjollnir",
+        "localizedName": "Mjollnir",
+        "info": "Places a charged shield on a target unit which has a 20% chance to release a shocking bolt at a nearby attacker and 4 additional enemies."
     },
     {
         "id": "160",
-        "name": "item_skadi",
-        "localizedName": "Eye of Skadi"
-    },
-    {
-        "id": "161",
-        "name": "item_recipe_sange",
-        "localizedName": "Sange"
+        "name": "skadi",
+        "localizedName": "Eye of Skadi",
+        "info": "Each attack slows the movement and attack speed of the target. The duration of the slow is based on whether the equipped hero is melee or ranged."
     },
     {
         "id": "162",
-        "name": "item_sange",
-        "localizedName": "Sange"
-    },
-    {
-        "id": "163",
-        "name": "item_recipe_helm_of_the_dominator",
-        "localizedName": "Helm of the Dominator"
+        "name": "sange",
+        "localizedName": "Sange",
+        "info": "Each attack has a chance to slow the enemy's movement and attack speed for 4 seconds. The slow is based on whether the equipped hero is melee or ranged."
     },
     {
         "id": "164",
-        "name": "item_helm_of_the_dominator",
-        "localizedName": "Helm of the Dominator"
-    },
-    {
-        "id": "165",
-        "name": "item_recipe_maelstrom",
-        "localizedName": "Maelstrom"
+        "name": "helm_of_the_dominator",
+        "localizedName": "Helm of the Dominator",
+        "info": "Take control of a non-hero, non-ancient target unit and sets its movement speed to 350. If a dominated creep's base health is naturally below the health minimum, its base health will be raised to the health minimum."
     },
     {
         "id": "166",
-        "name": "item_maelstrom",
-        "localizedName": "Maelstrom"
-    },
-    {
-        "id": "167",
-        "name": "item_recipe_desolator",
-        "localizedName": "Desolator"
+        "name": "maelstrom",
+        "localizedName": "Maelstrom",
+        "info": "Grants a chance on attack to release a bolt of electricity that leaps between 4 targets, dealing 120 magical damage to each."
     },
     {
         "id": "168",
-        "name": "item_desolator",
-        "localizedName": "Desolator"
-    },
-    {
-        "id": "169",
-        "name": "item_recipe_yasha",
-        "localizedName": "Yasha"
+        "name": "desolator",
+        "localizedName": "Desolator",
+        "info": "Your attacks reduce target's armor for 15 seconds."
     },
     {
         "id": "170",
-        "name": "item_yasha",
-        "localizedName": "Yasha"
-    },
-    {
-        "id": "171",
-        "name": "item_recipe_mask_of_madness",
-        "localizedName": "Mask of Madness"
+        "name": "yasha",
+        "localizedName": "Yasha",
+        "info": "Bonus +16 Agility, +15 Attack speed, +8% movement speed"
     },
     {
         "id": "172",
-        "name": "item_mask_of_madness",
-        "localizedName": "Mask of Madness"
-    },
-    {
-        "id": "173",
-        "name": "item_recipe_diffusal_blade",
-        "localizedName": "Diffusal Blade"
-    },
-    {
-        "id": "195",
-        "name": "item_recipe_diffusal_blade_2",
-        "localizedName": "Diffusal Blade"
+        "name": "mask_of_madness",
+        "localizedName": "Mask of Madness",
+        "info": "Gives 100 attack speed and 17% movement speed, but causes you to take extra 25% damage. Lasts 12 seconds."
     },
     {
         "id": "174",
-        "name": "item_diffusal_blade",
-        "localizedName": "Diffusal Blade"
+        "name": "diffusal_blade",
+        "localizedName": "Diffusal Blade",
+        "info": "If cast on an enemy, removes buffs from the target and slows it for 4 seconds. If cast on an ally, Purge removes most debuffs."
     },
     {
         "id": "196",
-        "name": "item_diffusal_blade_2",
-        "localizedName": "Diffusal Blade"
-    },
-    {
-        "id": "175",
-        "name": "item_recipe_ethereal_blade",
-        "localizedName": "Ethereal Blade"
+        "name": "diffusal_blade_2",
+        "localizedName": "Diffusal Blade",
+        "info": "If cast on an enemy, removes buffs from the target and slows it for 4 seconds. If cast on an ally, Purge removes most debuffs."
     },
     {
         "id": "176",
-        "name": "item_ethereal_blade",
-        "localizedName": "Ethereal Blade"
-    },
-    {
-        "id": "177",
-        "name": "item_recipe_soul_ring",
-        "localizedName": "Soul Ring"
+        "name": "ethereal_blade",
+        "localizedName": "Ethereal Blade",
+        "info": "Launches a projectile which converts the target to ethereal form, increasing any incoming magic damage they take, while rendering them immune to physical damage and unable to attack. Can be cast on self. If the target is an enemy, it is also slowed, and takes 2x your primary attribute + 75 as magical damage. Using a Town Portal Scroll or Boots of Travel will not dispel Ethereal Form."
     },
     {
         "id": "178",
-        "name": "item_soul_ring",
-        "localizedName": "Soul Ring"
-    },
-    {
-        "id": "179",
-        "name": "item_recipe_arcane_boots",
-        "localizedName": "Arcane Boots"
+        "name": "soul_ring",
+        "localizedName": "Soul Ring",
+        "info": "Consume 150 health to temporarily gain 150 mana. Lasts 10 seconds."
     },
     {
         "id": "180",
-        "name": "item_arcane_boots",
-        "localizedName": "Arcane Boots"
+        "name": "arcane_boots",
+        "localizedName": "Arcane Boots",
+        "info": "Restores mana to all allies in a 900 area around the hero."
     },
     {
         "id": "181",
-        "name": "item_orb_of_venom",
-        "localizedName": "Orb of Venom"
-    },
-    {
-        "id": "184",
-        "name": "item_recipe_ancient_janggo",
-        "localizedName": "Drum of Endurance"
+        "name": "orb_of_venom",
+        "localizedName": "Orb of Venom",
+        "info": "Poisons the target, dealing damage over time and slowing movement based on whether the equipped hero is melee or ranged."
     },
     {
         "id": "185",
-        "name": "item_ancient_janggo",
-        "localizedName": "Drum of Endurance"
-    },
-    {
-        "id": "186",
-        "name": "item_recipe_medallion_of_courage",
-        "localizedName": "Medallion of Courage"
+        "name": "ancient_janggo",
+        "localizedName": "Drum of Endurance",
+        "info": "Gives bonus +25 attack speed and +13% movement speed to allies in a 900 radius."
     },
     {
         "id": "187",
-        "name": "item_medallion_of_courage",
-        "localizedName": "Medallion of Courage"
+        "name": "medallion_of_courage",
+        "localizedName": "Medallion of Courage",
+        "info": "If cast on an ally, increases their armor while reducing the caster's. If cast on an enemy, reduces the armor of both the enemy and the caster. Cannot target magic immune enemies. Armor reduction is halved against Roshan."
     },
     {
         "id": "188",
-        "name": "item_smoke_of_deceit",
-        "localizedName": "Smoke of Deceit"
-    },
-    {
-        "id": "189",
-        "name": "item_recipe_veil_of_discord",
-        "localizedName": "Veil of Discord"
+        "name": "smoke_of_deceit",
+        "localizedName": "Smoke of Deceit",
+        "info": "Upon activation, the user and all nearby allied player-controlled units gain invisibility and bonus movement speed for a brief time. Minimap icons will also be hidden. Attacking, or moving within 1025 range of an enemy hero or tower, will break the invisibility."
     },
     {
         "id": "190",
-        "name": "item_veil_of_discord",
-        "localizedName": "Veil of Discord"
-    },
-    {
-        "id": "205",
-        "name": "item_recipe_rod_of_atos",
-        "localizedName": "Rod of Atos"
+        "name": "veil_of_discord",
+        "localizedName": "Veil of Discord",
+        "info": "Emits a weakening blast that increases the magic damage enemies take. Lasts 16 seconds."
     },
     {
         "id": "206",
-        "name": "item_rod_of_atos",
-        "localizedName": "Rod of Atos"
-    },
-    {
-        "id": "207",
-        "name": "item_recipe_abyssal_blade",
-        "localizedName": "Abyssal Blade"
+        "name": "rod_of_atos",
+        "localizedName": "Rod of Atos",
+        "info": "Slows the target's movement speed."
     },
     {
         "id": "208",
-        "name": "item_abyssal_blade",
-        "localizedName": "Abyssal Blade"
-    },
-    {
-        "id": "209",
-        "name": "item_recipe_heavens_halberd",
-        "localizedName": "Heaven's Halberd"
+        "name": "abyssal_blade",
+        "localizedName": "Abyssal Blade",
+        "info": "Stuns a target enemy unit for 2 seconds. Pierces Spell Immunity."
     },
     {
         "id": "210",
-        "name": "item_heavens_halberd",
-        "localizedName": "Heaven's Halberd"
-    },
-    {
-        "id": "211",
-        "name": "item_recipe_ring_of_aquila",
-        "localizedName": "Ring of Aquila"
+        "name": "heavens_halberd",
+        "localizedName": "Heaven's Halberd",
+        "info": "Prevents a target from attacking. Lasts 3 seconds on melee targets, and 5.5 seconds on ranged targets"
     },
     {
         "id": "212",
-        "name": "item_ring_of_aquila",
-        "localizedName": "Ring of Aquila"
-    },
-    {
-        "id": "213",
-        "name": "item_recipe_tranquil_boots",
-        "localizedName": "Tranquil Boots Recipe"
+        "name": "ring_of_aquila",
+        "localizedName": "Ring of Aquila",
+        "info": "Grants mana regeneration and armor in a 900 area of effect.
+                Toggle whether the aura affects other non-hero units.
+                Multiple instances of Aquila Aura do not stack."
     },
     {
         "id": "214",
-        "name": "item_tranquil_boots",
-        "localizedName": "Tranquil Boots"
+        "name": "tranquil_boots",
+        "localizedName": "Tranquil Boots",
+        "info": "Whenever you attack or are attacked, the health regeneration and 30 Movement Speed are lost for 13 seconds."
     },
     {
         "id": "215",
-        "name": "item_shadow_amulet",
-        "localizedName": "Shadow Amulet"
+        "name": "shadow_amulet",
+        "localizedName": "Shadow Amulet",
+        "info": "Grants invisibility to you or a target allied hero after a 1.5 second fade time. Moving breaks the invisibility. There is no cooldown when using this item on yourself."
+    },
+   [
+    {
+        "id": "1",
+        "name": "blink",
+        "localizedName": "Blink Dagger",
+        "info": "Teleport to a target point up to 1200 units away. If damage is taken, Blink Dagger cannot be used for 3 seconds."
     },
     {
-        "id": "216",
-        "name": "item_halloween_candy_corn",
-        "localizedName": "Greevil Taffy"
+        "id": "2",
+        "name": "blades_of_attack",
+        "localizedName": "Blades of Attack",
+        "info": "<b>Bonus</b>  +9 Attack damage"
     },
     {
-        "id": "217",
-        "name": "item_mystery_hook",
-        "localizedName": null
+        "id": "3",
+        "name": "broadsword",
+        "localizedName": "Broadsword"
+        "info": "Bonus  +18 Attack damage"
     },
     {
-        "id": "218",
-        "name": "item_mystery_arrow",
-        "localizedName": null
+        "id": "4",
+        "name": "chainmail",
+        "localizedName": "Chainmail",
+        "info": "Bonus   +5 Armor"
+            },
+    {
+        "id": "5",
+        "name": "claymore",
+        "localizedName": "Claymore",
+        "info": "Bonus    +21 Attack damage"
     },
     {
-        "id": "219",
-        "name": "item_mystery_missile",
-        "localizedName": null
+        "id": "6",
+        "name": "helm_of_iron_will",
+        "localizedName": "Helm of Iron Will",
+        "info": "Bonus    +3 Health regeneretaion
+                          +5 Armor"
     },
     {
-        "id": "220",
-        "name": "item_mystery_toss",
-        "localizedName": null
+        "id": "7",
+        "name": "javelin",
+        "localizedName": "Javelin",
+        "info": "Grants each attack a chance to deal bonus damage."
     },
     {
-        "id": "221",
-        "name": "item_mystery_vacuum",
-        "localizedName": null
+        "id": "8",
+        "name": "mithril_hammer",
+        "localizedName": "Mithril Hammer",
+        "info": "Bonus    +24 Attack damage"
     },
     {
-        "id": "226",
-        "name": "item_halloween_rapier",
-        "localizedName": null
+        "id": "9",
+        "name": "platemail",
+        "localizedName": "Platemail",
+        "info": "Bonus     +10 Armor"
     },
     {
-        "id": "228",
-        "name": "item_greevil_whistle",
-        "localizedName": "Greevil Whistle"
+        "id": "10",
+        "name": "quarterstaff",
+        "localizedName": "Quarterstaff",
+        "info": "Bonus     +10 Attack damage
+                           +10 Attack speed"
     },
     {
-        "id": "235",
-        "name": "item_greevil_whistle_toggle",
-        "localizedName": "Greevil Whistle"
+        "id": "11",
+        "name": "quelling_blade",
+        "localizedName": "Quelling Blade",
+        "info": "Destroy a target tree or ward. Chop cast range is increased when targetting wards."
     },
     {
-        "id": "227",
-        "name": "item_present",
-        "localizedName": "A Gift!"
+        "id": "12",
+        "name": "ring_of_protection",
+        "localizedName": "Ring of Protection",
+        "info": "Bonus     +2 Armor"
     },
     {
-        "id": "229",
-        "name": "item_winter_stocking",
-        "localizedName": "Xmas Stocking"
+        "id": "182",
+        "name": "stout_shield",
+        "localizedName": "Stout Shield",
+        "info": "Gives a chance to block damage based on whether the equipped hero is melee or ranged."
     },
     {
-        "id": "230",
-        "name": "item_winter_skates",
-        "localizedName": "Speed Skates"
+        "id": "13",
+        "name": "gauntlets",
+        "localizedName": "Gauntlets of Strength",
+        "info": "Bonus    +3 Strength"
     },
     {
-        "id": "231",
-        "name": "item_winter_cake",
-        "localizedName": "Fruit-bit Cake"
+        "id": "14",
+        "name": "slippers",
+        "localizedName": "Slippers of Agility",
+        "info": "Bonus    +3 Agility"
     },
     {
-        "id": "232",
-        "name": "item_winter_cookie",
-        "localizedName": "Wizard Cookie"
+        "id": "15",
+        "name": "mantle",
+        "localizedName": "Mantle of Intelligence",
+        "info": "Bonus    +3 Intelligence"
     },
     {
-        "id": "233",
-        "name": "item_winter_coco",
-        "localizedName": "Cocoa with Marshmallows"
+        "id": "16",
+        "name": "branches",
+        "localizedName": "Iron Branch",
+        "info": "Targets the ground to plant a happy little tree that lasts for 20 seconds"
     },
     {
-        "id": "234",
-        "name": "item_winter_ham",
-        "localizedName": "Clove Studded Ham"
+        "id": "17",
+        "name": "belt_of_strength",
+        "localizedName": "Belt of Strength"
+        "info": "Bonus    +6 Strength"
     },
     {
-        "id": "236",
-        "name": "item_winter_kringle",
-        "localizedName": "Kringle"
+        "id": "18",
+        "name": "boots_of_elves",
+        "localizedName": "Band of Elvenskin",
+        "info": "Bonus    +6 Agility"
     },
     {
-        "id": "237",
-        "name": "item_winter_mushroom",
-        "localizedName": "Snow Mushroom"
+        "id": "19",
+        "name": "robe",
+        "localizedName": "Robe of the Magi",
+        "info": "Bonus    +6 Intelligence"
     },
     {
-        "id": "238",
-        "name": "item_winter_greevil_treat",
-        "localizedName": "Greevil Treat"
+        "id": "20",
+        "name": "circlet",
+        "localizedName": "Circlet",
+        "info": "Bonus    +2 Strength, +2 Agility, +2 Intelligence"
     },
     {
-        "id": "239",
-        "name": "item_winter_greevil_garbage",
-        "localizedName": "Greevil Chow"
+        "id": "21",
+        "name": "ogre_axe",
+        "localizedName": "Ogre Club",
+        "info": "Bonus    +10 Strength"
     },
     {
-        "id": "240",
-        "name": "item_winter_greevil_chewy",
-        "localizedName": "Greevil Blink Bone"
-    }
-]
+        "id": "22",
+        "name": "blade_of_alacrity",
+        "localizedName": "Blade of Alacrity",
+        "info": "Bonus    +10 Agility"
+    },
+    {
+        "id": "23",
+        "name": "staff_of_wizardry",
+        "localizedName": "Staff of Wizardry",
+        "info": "Bonus    +10 Intelligence"
+    },
+    {
+        "id": "24",
+        "name": "ultimate_orb",
+        "localizedName": "Ultimate Orb",
+        "info": "Bonus  +10 Strength
++10 Agility
++10 Intelligence"
+    },
+    {
+        "id": "25",
+        "name": "gloves",
+        "localizedName": "Gloves of Haste",
+        "info": "Bonus Grants it's wearer +20 Attack speed"
+    },
+    {
+        "id": "26",
+        "name": "lifesteal",
+        "localizedName": "Morbid Mask",
+        "info": "Heals the attacker for a percentage of attack damage dealt."
+    },
+    {
+        "id": "27",
+        "name": "ring_of_regen",
+        "localizedName": "Ring of Regen",
+        "info": "Bonus    +2 Health regeneretaion"
+    },
+    {
+        "id": "28",
+        "name": "sobi_mask",
+        "localizedName": "Sage's Mask",
+        "info": "Bonus    +50% Mana regeneration"
+    },
+    {
+        "id": "29",
+        "name": "boots",
+        "localizedName": "Boots of Speed",
+        "info": "Bonus    +45 Movement Speed"
+    },
+    {
+        "id": "30",
+        "name": "gem",
+        "localizedName": "Gem of True Sight",
+        "info": "Grants the wearer the ability of true sight thus reveling invisible units"
+    },
+    {
+        "id": "31",
+        "name": "cloak",
+        "localizedName": "Cloak",
+        "info": "Bonus    +15 Magic resistance"
+    },
+    {
+        "id": "32",
+        "name": "talisman_of_evasion",
+        "localizedName": "Talisman of Evasion",
+        "info": "Bonus    +25% Evasion"
+    },
+    {
+        "id": "33",
+        "name": "cheese",
+        "localizedName": "Cheese",
+        "info": "Instantly restores health and mana."
+    },
+    {
+        "id": "34",
+        "name": "magic_stick",
+        "localizedName": "Magic Stick",
+        "info": "Instantly restores health and mana based on the number of charges stored. Gains a charge (max 10) whenever a nearby visible enemy uses an ability."
+    },
+    {
+        "id": "35",
+        "name": "recipe_magic_wand",
+        "localizedName": "Magic Wand",
+        "info": "Instantly restores health and mana based on the number of charges stored. Gains a charge (max 17) whenever a nearby visible enemy uses an ability."
+    },
+
+    {
+        "id": "37",
+        "name": "ghost",
+        "localizedName": "Ghost Scepter",
+        "info": "Enter ghost form, becoming immune to physical damage, yet unable to attack and taking 40% extra magic damage."
+
+    },
+    {
+        "id": "38",
+        "name": "clarity",
+        "localizedName": "Clarity",
+        "info": "Restores mana to the target unit over time. If the unit is attacked, the effect is lost."
+    },
+    {
+        "id": "39",
+        "name": "flask",
+        "localizedName": "Healing Salve",
+        "info": "Restores health to the target unit over time. If the unit is attacked, the effect is lost."
+    },
+    {
+        "id": "40",
+        "name": "dust",
+        "localizedName": "Dust of Appearance",
+        "info": "Reveals and slows invisible Heroes in a nearby area."
+    },
+    {
+        "id": "41",
+        "name": "bottle",
+        "localizedName": "Bottle",
+        "info": "Consumes a charge to restore Health and Mana over time. Healing stops if attacked. Bottle can be refilled at your team's fountain. If Bottle does not have full charges and is placed on a courier, the courier will move 30% slower."
+    },
+    {
+        "id": "42",
+        "name": "ward_observer",
+        "localizedName": "Observer Ward",
+        "info": "Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes.
+Hold Control to give one Observer Ward to an allied hero."
+
+    },
+    {
+        "id": "43",
+        "name": "ward_sentry",
+        "localizedName": "Sentry Ward",
+        "info": "Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within its range. Lasts 4 minutes.
+Hold Control to give one Sentry Ward to an allied hero"
+    },
+    {
+        "id": "44",
+        "name": "tango",
+        "localizedName": "Tango",
+        "info": "Consume a target tree or ward to gradually restore health.
+Comes with 4 charges. Can be used on an allied hero to give them one Tango."
+    },
+    {
+        "id": "241",
+        "name": "tango_single",
+        "localizedName": "Tango (Shared)",
+        "info": "Consume a target tree or ward to gradually restore health.
+Comes with 4 charges. Can be used on an allied hero to give them one Tango."
+    },
+    {
+        "id": "45",
+        "name": "courier",
+        "localizedName": "Animal Courier",
+        "info:" "summons an animal companion to carry items for you and your team"
+    },
+    {
+        "id": "46",
+        "name": "tpscroll",
+        "localizedName": "Town Portal Scroll",
+        "info": "Teleports you to a friendly structure"
+    },
+    {
+        "id": "48",
+        "name": "travel_boots",
+        "localizedName": "Boots of Travel",
+        "info": "info" "Bonus     +70 Movement Speed
+        Also gives it's wearer the ability to teleport to any friendly unit(except Heroes)"
+    },
+
+    {
+        "id": "50",
+        "name": "phase_boots",
+        "localizedName": "Phase Boots",
+        "info": "Gives increased movement speed and lets you move through units. The increased movement speed is based on whether the equipped hero is melee or ranged."
+    },
+    {
+        "id": "51",
+        "name": "demon_edge",
+        "localizedName": "Demon Edge",
+        "info": "Bonus    +24 Attack damage"
+    },
+    {
+        "id": "52",
+        "name": "eagle",
+        "localizedName": "Eaglesong",
+        "info": "Bonus    +25 Agility"
+    },
+    {
+        "id": "53",
+        "name": "reaver",
+        "localizedName": "Reaver",
+        "info": "Bonus    +25 Strength"
+    },
+    {
+        "id": "54",
+        "name": "relic",
+        "localizedName": "Sacred Relic",
+        "info": "Bonus    +60 Attack damage"
+    },
+    {
+        "id": "55",
+        "name": "hyperstone",
+        "localizedName": "Hyperstone",
+        "info": "Bonus    +55 Attack speed",
+
+    },
+    {
+        "id": "56",
+        "name": "ring_of_health",
+        "localizedName": "Ring of Health",
+        "info": "Bonus:   +6 Health regeneretaion"
+    },
+    {
+        "id": "57",
+        "name": "void_stone",
+        "localizedName": "Void Stone",
+        "info": "Bonus    +100% Mana regeneration"
+    },
+    {
+        "id": "58",
+        "name": "mystic_staff",
+        "localizedName": "Mystic Staff",
+        "info": "Bonus    +25 Intelligence" 
+    },
+    {
+        "id": "59",
+        "name": "energy_booster",
+        "localizedName": "Energy Booster",
+        "info": "Bonus    +250 Mana"
+    },
+    {
+        "id": "60",
+        "name": "point_booster",
+        "localizedName": "Point Booster",
+        "info": "Bonus    +175 Health, +175 Mana"
+    }, 
+    {
+        "id": "61",
+        "name": "vitality_booster",
+        "localizedName": "Vitality Booster",
+        "info": "Bonus    +250 Health"
+    },
+    {
+        "id": "63",
+        "name": "power_treads",
+        "localizedName": "Power Treads",
+        "info": "Changes selected attribute between Strength, Agility and Intelligence"
+    },
+    {
+        "id": "65",
+        "name": "hand_of_midas",
+        "localizedName": "Hand of Midas",
+        "info": "Kills a non-hero target for 190 gold and 2.5x experience. Cannot be used on Ancient Creeps."
+    },
+    {
+        "id": "67",
+        "name": "oblivion_staff",
+        "localizedName": "Oblivion Staff",
+        "info": "Bonus    +6 Intelligence, +75% Mana regeneration, +15 Attack damage, +10 Attack Speed"
+    },
+    {
+        "id": "69",
+        "name": "pers",
+        "localizedName": "Perseverance",
+        "info": "Bonus    +6 Health regeneration, +125% Mana regeneration, +10 Attack damage"
+    },
+
+    {
+        "id": "71",
+        "name": "poor_mans_shield",
+        "localizedName": "Poor Man's Shield",
+        "info": "Blocks physical attack damage based on whether the equipped hero is ranged or melee. Poor Man's Shield will always block attacks from enemy Heroes, but has a 53% chance to block damage from creeps."
+    },
+    {
+        "id": "73",
+        "name": "bracer",
+        "localizedName": "Bracer",
+        "info": "Bonus   +6 Strength, +3 Agility, +3 Intelligence, +3 Attack damage"
+    },
+    {
+        "id": "75",
+        "name": "wraith_band",
+        "localizedName": "Wraith Band",
+        "info": "Bonus   +6 Agility, +3 Strength, +3 Intelligence, +3 Attack damage"
+    },
+    {
+        "id": "77",
+        "name": "null_talisman",
+        "localizedName": "Null Talisman",
+        "info": "Bonus    +6 Intelligence, +3 Strength, +3 Agility, +3 Attack damage"
+    },
+    {
+        "id": "79",
+        "name": "mekansm",
+        "localizedName": "Mekansm",
+        "info": "Heals 250 health and gives +2 armor to allied units in a 900 radius."
+    },
+
+    {
+        "id": "81",
+        "name": "vladmir",
+        "localizedName": "Vladmir's Offering",
+        "info": "Grants lifesteal, health regeneration, mana regeneration, bonus attack damage, and armor to allies in a 900 radius. The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged.
+Multiple instances of Vladmir's Aura do not stack"
+    },
+    {
+        "id": "84",
+        "name": "flying_courier",
+        "localizedName": "Flying Courier",
+        "info": "Upgrades your team's Animal Courier to a Flying Courier, granting it swift, unobstructed movement to carry items to and from your team's base."
+    },
+
+    {
+        "id": "86",
+        "name": "buckler",
+        "localizedName": "Buckler",
+        "info": "Activte: Gives +2 armor to all allied units in a 900 radius. Lasts 25 seconds on heroes, 30 seconds on units."
+    },
+    {
+        "id": "88",
+        "name": "ring_of_basilius",
+        "localizedName": "Ring of Basilius",
+        "info": "Grants mana regeneration and armor in a 900 area of effect.
+Toggle whether the aura affects other non-hero units.
+Multiple instances of Basilius Aura do not stack"
+    },
+    {
+        "id": "90",
+        "name": "pipe",
+        "localizedName": "Pipe of Insight",
+        "info": "Gives a shield that blocks 400 spell damage to all allies in a 900 radius."
+    },
+    {
+        "id": "92",
+        "name": "urn_of_shadows",
+        "localizedName": "Urn of Shadows",
+        "info": "Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero or tower.
+Gains charges every time an enemy hero dies within 1400 units. Only the closest Urn to the dying hero will gain a charge."
+    },
+    {
+        "id": "94",
+        "name": "headdress",
+        "localizedName": "Headdress",
+        "info": "Restores health to allies in a 900 unit radius.
+Multiple instances of Regeneration Aura do not stack."
+    },
+    {
+        "id": "96",
+        "name": "sheepstick",
+        "localizedName": "Scythe of Vyse",
+        "info": "Turns a target unit into a harmless critter for 3.5 seconds. Instantly destroys illusions."
+    },
+    {
+        "id": "98",
+        "name": "orchid",
+        "localizedName": "Orchid Malevolence",
+        "info": "Silences the target unit for 5 seconds and amplifies the damage it takes by 30%."
+    },
+    {
+        "id": "100",
+        "name": "cyclone",
+        "localizedName": "Eul's Scepter of Divinity",
+        "info": "Sweeps a target unit up into cyclone, making them invulnerable for 2.5 seconds. Cyclone can be cast on yourself. Enemy units take 50 magical damage upon landing."
+    },
+    {
+        "id": "102",
+        "name": "force_staff",
+        "localizedName": "Force Staff",
+        "info": "Pushes any target unit 600 units in the direction it is facing. Double click to instantly cast Force on yourself."
+    },
+    {
+        "id": "104",
+        "name": "dagon",
+        "localizedName": "Dagon",
+        "info": "Emits a powerful burst of magical damage upon a targeted enemy unit doing 400 damage"
+    },
+    {
+        "id": "201",
+        "name": "dagon_2",
+        "localizedName": "Dagon",
+        "info": "Emits a powerful burst of magical damage upon a targeted enemy unit doing 500 damage"
+    },
+    {
+        "id": "202",
+        "name": "dagon_3",
+        "localizedName": "Dagon",
+        "info": "Emits a powerful burst of magical damage upon a targeted enemy unit doing 600 damage"
+    },
+    {
+        "id": "203",
+        "name": "dagon_4",
+        "localizedName": "Dagon",
+        "info": "Emits a powerful burst of magical damage upon a targeted enemy unit doing 700 damage"
+    },
+    {
+        "id": "204",
+        "name": "dagon_5",
+        "localizedName": "Dagon",
+        "info": "Emits a powerful burst of magical damage upon a targeted enemy unit doing 800 damage"
+    },
+    {
+        "id": "106",
+        "name": "necronomicon",
+        "localizedName": "Necronomicon",
+        "info": "Summons a Warrior and an Archer to fight for you for 40 seconds, whose strength and abilities increase as Necronomicon is upgraded. Warrior gains True Sight at level 3."
+    },
+    {
+        "id": "193",
+        "name": "necronomicon_2",
+        "localizedName": "Necronomicon",
+        "info": "Summons a Warrior and an Archer to fight for you for 40 seconds, whose strength and abilities increase as Necronomicon is upgraded. Warrior gains True Sight at level 3."
+    },
+    {
+        "id": "194",
+        "name": "necronomicon_3",
+        "localizedName": "Necronomicon",
+        "info": "Summons a Warrior and an Archer to fight for you for 40 seconds, whose strength and abilities increase as Necronomicon is upgraded. Warrior gains True Sight at level 3."
+    },
+    {
+        "id": "108",
+        "name": "ultimate_scepter",
+        "localizedName": "Aghanim's Scepter",
+        "info": "Upgrades the ultimate and some abilities of certain heroes"
+    },
+    {
+        "id": "110",
+        "name": "refresher",
+        "localizedName": "Refresher Orb",
+        "info": "Resets the cooldowns of all your items and abilities."
+    },
+    {
+        "id": "112",
+        "name": "assault",
+        "localizedName": "Assault Cuirass",
+        "info": "Grants attack speed and armor to nearby allied units and structures, and decreases the armor of nearby enemies.
+Multiple instances of Assault Aura do not stack."
+    },
+    {
+        "id": "114",
+        "name": "heart",
+        "localizedName": "Heart of Tarrasque",
+        "info": "Restores a percentage of max health per second. If damage is taken from an enemy hero or Roshan, this ability is disabled for 5 seconds for melee heroes, or 7 seconds for ranged heroes."
+    },
+    {
+        "id": "116",
+        "name": "black_king_bar",
+        "localizedName": "Black King Bar",
+        "info": "Grants Spell Immunity and 100% Magic Damage Resistance. Duration and cooldown decrease with each use. Some abilities are able to disable through Avatar."
+    },
+    {
+        "id": "117",
+        "name": "aegis",
+        "localizedName": "Aegis of the Immortal",
+        "info": "Brings you to life with full health and mana 5 seconds after you die, at the location where you died. Reincarnation must be used within 5 minutes or Aegis of the Immortal disappears. If it expires, it will heal you over 5 seconds (dispels on damage)."
+    },
+    {
+        "id": "119",
+        "name": "shivas_guard",
+        "localizedName": "Shiva's Guard",
+        "info": "Emits a freezing wave that deals 200 magical damage to enemies and slows their movement by 40% for 4 seconds."
+    },
+    {
+        "id": "121",
+        "name": "bloodstone",
+        "localizedName": "Bloodstone",
+        "info": " Activate: Instantly causes you to die."
+    },
+    {
+        "id": "123",
+        "name": "sphere",
+        "localizedName": "Linken's Sphere",
+        "info": "Blocks most targeted spells once every 13 seconds."
+    },
+    {
+        "id": "125",
+        "name": "vanguard",
+        "localizedName": "Vanguard",
+        "info": "Makes the wielder block damage from each incoming attack based on whether the equipped hero is melee or ranged."
+    },
+    {
+        "id": "127",
+        "name": "blade_mail",
+        "localizedName": "Blade Mail",
+        "info": "Reflects any damage taken back to the unit that dealt the damage. Lasts 4.5 seconds."
+    },
+    {
+        "id": "129",
+        "name": "soul_booster",
+        "localizedName": "Soul Booster",
+        "info": "Bonus    +425 Health, +425 Mana, +50% Mana regeneration"
+    },
+    {
+        "id": "131",
+        "name": "hood_of_defiance",
+        "localizedName": "Hood of Defiance",
+        "info": "Creates a spell shield that absorbs up to 325 magical damage."
+    },
+    {
+        "id": "133",
+        "name": "rapier",
+        "localizedName": "Divine Rapier",
+        "info": "Bonus    +330 Attack damage"
+    },
+    {
+        "id": "135",
+        "name": "monkey_king_bar",
+        "localizedName": "Monkey King Bar",
+        "info": "Activate: makes the user spell imune for 10/9/8/7/6/5 seconds" 
+    },
+    {
+        "id": "137",
+        "name": "radiance",
+        "localizedName": "Radiance",
+        "info": "When active, scorches nearby enemies for 50 damage per second and blinds them, causing them to miss 17% of their attacks."
+    },
+    {
+        "id": "139",
+        "name": "butterfly",
+        "localizedName": "Butterfly",
+        "info": "Trade evasion for 35% additional movement speed for 4 seconds."
+    },
+    {
+        "id": "141",
+        "name": "greater_crit",
+        "localizedName": "Daedalus",
+        "info": "Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings."
+    },
+    {
+        "id": "143",
+        "name": "basher",
+        "localizedName": "Skull Basher",
+        "info": "Grants each attack a chance to stun the target for 1.4 seconds and deal 85 bonus damage, based on whether the equipped hero is ranged or melee."
+    },
+    {
+        "id": "145",
+        "name": "bfury",
+        "localizedName": "Battle Fury",
+        "info": "Destroy a target tree or ward. Chop cast range is increased when targetting wards."
+    },
+    {
+        "id": "147",
+        "name": "manta",
+        "localizedName": "Manta Style",
+        "info": "Creates 2 images of your hero that last 20 seconds. Melee heroes have a 30 second cooldown on this ability, while for Ranged heroes the cooldown is 45 seconds.
+Melee images deal 33% damage and take 350% damage, while Ranged images deal 28% and take 400% damage."
+    },
+    {
+        "id": "149",
+        "name": "lesser_crit",
+        "localizedName": "Crystalys",
+        "info": "Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings."
+    },
+    {
+        "id": "151",
+        "name": "armlet",
+        "localizedName": "Armlet of Mordiggian",
+        "info": "When active, Unholy Strength grants +31 damage and +25 strength, but drains 45 health per second. You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated."
+    },
+    {
+        "id": "152",
+        "name": "invis_sword",
+        "localizedName": "Shadow Blade",
+        "info": "Makes you invisible until the duration ends, or until you attack or cast a spell. While Shadow Walk is active, you move 20% faster and can move through units. If attacking to end the invisibility, you gain 175 bonus damage on that attack. Lasts 14 seconds."
+    },
+    {
+        "id": "154",
+        "name": "sange_and_yasha",
+        "localizedName": "Sange and Yasha",
+        "info": "Each attack has a chance to slow the enemy's movement and attack speed for 5 seconds. The slow is based on whether the equipped hero is melee or ranged."
+    },
+    {
+        "id": "156",
+        "name": "satanic",
+        "localizedName": "Satanic",
+        "info": "Increases Lifesteal percentage to 200% for 4.5 seconds."
+    },
+    {
+        "id": "158",
+        "name": "mjollnir",
+        "localizedName": "Mjollnir",
+        "info": "Places a charged shield on a target unit which has a 20% chance to release a shocking bolt at a nearby attacker and 4 additional enemies."
+    },
+    {
+        "id": "160",
+        "name": "skadi",
+        "localizedName": "Eye of Skadi",
+        "info": "Each attack slows the movement and attack speed of the target. The duration of the slow is based on whether the equipped hero is melee or ranged."
+    },
+    {
+        "id": "162",
+        "name": "sange",
+        "localizedName": "Sange",
+        "info": "Each attack has a chance to slow the enemy's movement and attack speed for 4 seconds. The slow is based on whether the equipped hero is melee or ranged."
+    },
+    {
+        "id": "164",
+        "name": "helm_of_the_dominator",
+        "localizedName": "Helm of the Dominator",
+        "info": "Take control of a non-hero, non-ancient target unit and sets its movement speed to 350. If a dominated creep's base health is naturally below the health minimum, its base health will be raised to the health minimum."
+    },
+    {
+        "id": "166",
+        "name": "maelstrom",
+        "localizedName": "Maelstrom",
+        "info": "Grants a chance on attack to release a bolt of electricity that leaps between 4 targets, dealing 120 magical damage to each."
+    },
+    {
+        "id": "168",
+        "name": "desolator",
+        "localizedName": "Desolator",
+        "info": "Your attacks reduce target's armor for 15 seconds."
+    },
+    {
+        "id": "170",
+        "name": "yasha",
+        "localizedName": "Yasha",
+        "info": "Bonus +16 Agility, +15 Attack speed, +8% movement speed"
+    },
+    {
+        "id": "172",
+        "name": "mask_of_madness",
+        "localizedName": "Mask of Madness",
+        "info": "Gives 100 attack speed and 17% movement speed, but causes you to take extra 25% damage. Lasts 12 seconds."
+    },
+    {
+        "id": "174",
+        "name": "diffusal_blade",
+        "localizedName": "Diffusal Blade",
+        "info": "If cast on an enemy, removes buffs from the target and slows it for 4 seconds. If cast on an ally, Purge removes most debuffs."
+    },
+    {
+        "id": "196",
+        "name": "diffusal_blade_2",
+        "localizedName": "Diffusal Blade",
+        "info": "If cast on an enemy, removes buffs from the target and slows it for 4 seconds. If cast on an ally, Purge removes most debuffs."
+    },
+    {
+        "id": "176",
+        "name": "ethereal_blade",
+        "localizedName": "Ethereal Blade",
+        "info": "Launches a projectile which converts the target to ethereal form, increasing any incoming magic damage they take, while rendering them immune to physical damage and unable to attack. Can be cast on self. If the target is an enemy, it is also slowed, and takes 2x your primary attribute + 75 as magical damage. Using a Town Portal Scroll or Boots of Travel will not dispel Ethereal Form."
+    },
+    {
+        "id": "178",
+        "name": "soul_ring",
+        "localizedName": "Soul Ring",
+        "info": "Consume 150 health to temporarily gain 150 mana. Lasts 10 seconds."
+    },
+    {
+        "id": "180",
+        "name": "arcane_boots",
+        "localizedName": "Arcane Boots",
+        "info": "Restores mana to all allies in a 900 area around the hero."
+    },
+    {
+        "id": "181",
+        "name": "orb_of_venom",
+        "localizedName": "Orb of Venom",
+        "info": "Poisons the target, dealing damage over time and slowing movement based on whether the equipped hero is melee or ranged."
+    },
+    {
+        "id": "185",
+        "name": "ancient_janggo",
+        "localizedName": "Drum of Endurance",
+        "info": "Gives bonus +25 attack speed and +13% movement speed to allies in a 900 radius."
+    },
+    {
+        "id": "187",
+        "name": "medallion_of_courage",
+        "localizedName": "Medallion of Courage",
+        "info": "If cast on an ally, increases their armor while reducing the caster's. If cast on an enemy, reduces the armor of both the enemy and the caster. Cannot target magic immune enemies. Armor reduction is halved against Roshan."
+    },
+    {
+        "id": "188",
+        "name": "smoke_of_deceit",
+        "localizedName": "Smoke of Deceit",
+        "info": "Upon activation, the user and all nearby allied player-controlled units gain invisibility and bonus movement speed for a brief time. Minimap icons will also be hidden. Attacking, or moving within 1025 range of an enemy hero or tower, will break the invisibility."
+    },
+    {
+        "id": "190",
+        "name": "veil_of_discord",
+        "localizedName": "Veil of Discord",
+        "info": "Emits a weakening blast that increases the magic damage enemies take. Lasts 16 seconds."
+    },
+    {
+        "id": "206",
+        "name": "rod_of_atos",
+        "localizedName": "Rod of Atos",
+        "info": "Slows the target's movement speed."
+    },
+    {
+        "id": "208",
+        "name": "abyssal_blade",
+        "localizedName": "Abyssal Blade",
+        "info": "Stuns a target enemy unit for 2 seconds. Pierces Spell Immunity."
+    },
+    {
+        "id": "210",
+        "name": "heavens_halberd",
+        "localizedName": "Heaven's Halberd",
+        "info": "Prevents a target from attacking. Lasts 3 seconds on melee targets, and 5.5 seconds on ranged targets"
+    },
+    {
+        "id": "212",
+        "name": "ring_of_aquila",
+        "localizedName": "Ring of Aquila",
+        "info": "Grants mana regeneration and armor in a 900 area of effect.
+                Toggle whether the aura affects other non-hero units.
+                Multiple instances of Aquila Aura do not stack."
+    },
+    {
+        "id": "214",
+        "name": "tranquil_boots",
+        "localizedName": "Tranquil Boots",
+        "info": "Whenever you attack or are attacked, the health regeneration and 30 Movement Speed are lost for 13 seconds."
+    },
+    {
+        "id": "215",
+        "name": "shadow_amulet",
+        "localizedName": "Shadow Amulet",
+        "info": "Grants invisibility to you or a target allied hero after a 1.5 second fade time. Moving breaks the invisibility. There is no cooldown when using this item on yourself."
+    },
+   ]
