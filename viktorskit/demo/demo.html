@@ -60,7 +60,6 @@
          </carousel3d-slide>
           
       </div>
-      <p ng-bind="slide.caption">Hej</p>
          <!-- Karusell slut -->
 
 
@@ -80,17 +79,17 @@
                   <!-- Abilities -->
                   <div id="spells" class="container cate">
                      <div>
-                        <h1 data-ng-repeat="hero in heroes | filter:search | orderBy:'id' | limitTo: 1">{{hero.localizedName}}</h1>
+                        <h1> {{captions}}</h1>
                         
                      </div>
                      <div>
-                        <div data-ng-repeat="abilitiy in abilities | filter:search | orderBy:'id' | limitTo: 4">
+                        <div data-ng-repeat="ability in currentAbilities">
                            <div class="media-left">
-                              <img ng-src="images/abilities/{{abilitiy.name}}_hp1.png" style="width:60px">
+                              <img ng-src="images/abilities/{{ability.name}}_hp1.png" style="width:60px">
                            </div>
                            <div class="media-body" >
-                              <h4 class="media-heading">{{abilitiy.localizedName}}</h4>
-                              <p>{{abilitiy.localizedName}}</p>
+                              <h4 class="media-heading">{{ability.localizedName}}</h4>
+                              <p>{{ability.localizedName}}</p>
                            </div>
                         </div>
                      </div>

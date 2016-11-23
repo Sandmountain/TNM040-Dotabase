@@ -19,14 +19,14 @@ var demo = angular.module('demo', [
         /*vm.slides = [];
         for (var i = 0; i < 5; i++) 
         {
-            vm.slides[i] = {'src': 'images/photo3.jpg', caption: 'Alchemist '};
+            vm.slides[i] = {'src': 'images/hero.localizedName_hp1.jpg', caption: 'hero.localizedName ', id: i};
         }*/
         
         vm.slides = [
             {'src': 'images/heroes/abaddon_vert.jpg', caption: 'Abaddon'},
             {'src': 'images/heroes/alchemist_vert.jpg', caption: 'Alchemist'},
             {'src': 'images/heroes/ancient_apparition_vert.jpg', caption: 'Ancient Apparition'},
-            {'src': 'images/heroes/anti-mage_vert.jpg', caption: 'Anti Mage'},
+            {'src': 'images/heroes/anti-mage_vert.jpg', caption: 'Anti-Mage'},
             {'src': 'images/heroes/axe_vert.jpg', caption: 'Axe'},
             {'src': 'images/heroes/bane_vert.jpg', caption: 'Bane'},
             {'src': 'images/heroes/batrider_vert.jpg', caption: 'Batrider'},
@@ -127,7 +127,7 @@ var demo = angular.module('demo', [
             {'src': 'images/heroes/visage_vert.jpg', caption: 'Visage'},
             {'src': 'images/heroes/warlock_vert.jpg', caption: 'Warlock'},
             {'src': 'images/heroes/weaver_vert.jpg', caption: 'Weaver'},
-            {'src': 'images/heroes/windranger_vert.jpg', caption: 'Windrunner'},
+            {'src': 'images/heroes/windranger_vert.jpg', caption: 'Windranger'},
             {'src': 'images/heroes/witch_doctor_vert.jpg', caption: 'Witch Doctor'},
             {'src': 'images/heroes/Wraith_king_vert.jpg', caption: 'Wraith King'},
             {'src': 'images/heroes/zeus_vert.jpg', caption: 'Zeus'},
@@ -173,8 +173,8 @@ var demo = angular.module('demo', [
 
         function filterSlides(){
             vm.filteredSlides = $filter('filter')(vm.slides, vm.filterQuery);
-           /*if($filter('filter')(vm.slides, vm.filterQuery) == 0)
-            vm.filteredSlides = [{'src': 'images/heroes/error.jpg', caption: 'error'}]; */
+           if($filter('filter')(vm.slides, vm.filterQuery) == 0)
+            vm.filteredSlides = [{'src': 'images/heroes/error.jpg', caption: 'error'}]; 
 
           
         }
@@ -189,12 +189,67 @@ var demo = angular.module('demo', [
 
         function selectedClick(index) {
             $log.log('Selected Slide Clicked callback triggered. \n == Slide index is: ' + index + ' ==');
+           // console.log(vm.filteredSlides[index].caption) //caption i sorterad lista
+            var counter = 0;
+            var temp = [];
+            for (i = 0; i < $scope.heroes.length; i++)
+            {
+                
+               // console.log($scope.heroes[i].id)
+               //console.log($scope.heroes.localizedName);
+                if(vm.filteredSlides[index].caption == $scope.heroes[i].localizedName )
+                {
+                   // console.log(vm.filteredSlides[index].caption, $scope.heroes[i].id);
+                    for (j = 0; j < $scope.abilities.length; j++)
+                    {
+                        if($scope.heroes[i].id == $scope.abilities[j].heroId)
+                        {
+                            console.log($scope.abilities[j].localizedName);
+                            temp[counter] = $scope.abilities[j];
 
- 
+                            counter++;
+                          //  console.log(counter);
+
+                        }
+                    }
+
+                }
+            }
+            $scope.caption = vm.filteredSlides[index].caption;
+            $scope.currentAbilities = temp;
+
         }
 
         function slideChanged(index) {
-           // $log.log('Slide Changed callback triggered. \n == Slide index is: ' + index + ' ==');
+            $log.log('Slide Changed callback triggered. \n == Slide index is: ' + index + ' ==');
+            var counter = 0;
+            var temp = [];
+            for (i = 0; i < $scope.heroes.length; i++)
+            {
+                
+               // console.log($scope.heroes[i].id)
+               //console.log($scope.heroes.localizedName);
+                if(vm.filteredSlides[index].caption == $scope.heroes[i].localizedName )
+                {
+                   // console.log(vm.filteredSlides[index].caption, $scope.heroes[i].id);
+                    for (j = 0; j < $scope.abilities.length; j++)
+                    {
+                        if($scope.heroes[i].id == $scope.abilities[j].heroId)
+                        {
+                            console.log($scope.abilities[j].localizedName);
+                            temp[counter] = $scope.abilities[j];
+
+                            counter++;
+                          //  console.log(counter);
+
+                        }
+                    }
+
+                }
+            }
+            $scope.caption = vm.filteredSlides[index].caption;
+            $scope.currentAbilities = temp;
+
         }
 
 
@@ -212,7 +267,8 @@ var demo = angular.module('demo', [
         promise.then(function (data)
         {
             $scope.heroes = data.data;
-            console.log($scope)
+
+
         })
 
         //Abilites
@@ -221,14 +277,12 @@ var demo = angular.module('demo', [
         {
             $scope.abilities = data.data;
 
-            console.log($scope)
         })
         //items
         var promise3 = itemsService.getItems();
         promise3.then(function (data)
         {
             $scope.items = data.data;
-            console.log($scope)
         });
     }
 
