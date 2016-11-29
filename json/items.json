@@ -9,7 +9,7 @@
         "id": "2",
         "name": "blades_of_attack",
         "localizedName": "Blades of Attack",
-        "info": "<b>Bonus</b>  +9 Attack damage"
+        "info": "Bonus  +9 Attack damage"
     },
     {
         "id": "3",
@@ -33,8 +33,7 @@
         "id": "6",
         "name": "helm_of_iron_will",
         "localizedName": "Helm of Iron Will",
-        "info": "Bonus    +3 Health regeneretaion
-                          +5 Armor"
+        "info": "Bonus    +3 Health regeneretaion\n +5 Armor"
     },
     {
         "id": "7",
@@ -58,8 +57,7 @@
         "id": "10",
         "name": "quarterstaff",
         "localizedName": "Quarterstaff",
-        "info": "Bonus     +10 Attack damage
-                           +10 Attack speed"
+        "info": "Bonus     +10 Attack damage \n +10 Attack speed"
     },
     {
         "id": "11",
@@ -149,9 +147,7 @@
         "id": "24",
         "name": "ultimate_orb",
         "localizedName": "Ultimate Orb",
-        "info": "Bonus  +10 Strength
-                        +10 Agility
-                        +10 Intelligence"
+        "info": "Bonus  +10 Strength \n +10 Agility \n +10 Intelligence"
     },
     {
         "id": "25",
@@ -249,36 +245,34 @@
         "id": "41",
         "name": "bottle",
         "localizedName": "Bottle",
-        "info": "Consumes a charge to restore Health and Mana over time. Healing stops if attacked. Bottle can be refilled at your team's fountain. If Bottle does not have full charges and is placed on a courier, the courier will move 30% slower."
+        "info": "Consumes a charge to restore Health and Mana over time. Healing stops if attacked. Bottle can be refilled at your team's fountain. \n If Bottle does not have full charges and is placed on a courier, the courier will move 30% slower."
     },
+
+
     {
         "id": "42",
         "name": "ward_observer",
         "localizedName": "Observer Ward",
-        "info": "Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes.
-Hold Control to give one Observer Ward to an allied hero."
+        "info": "Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes. \n Hold Control to give one Observer Ward to an allied hero."
 
     },
     {
         "id": "43",
         "name": "ward_sentry",
         "localizedName": "Sentry Ward",
-        "info": "Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within its range. Lasts 4 minutes.
-Hold Control to give one Sentry Ward to an allied hero"
+        "info": "Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within its range. Lasts 4 minutes. \n Hold Control to give one Sentry Ward to an allied hero"
     },
     {
         "id": "44",
         "name": "tango",
         "localizedName": "Tango",
-        "info": "Consume a target tree or ward to gradually restore health.
-Comes with 4 charges. Can be used on an allied hero to give them one Tango."
+        "info": "Consume a target tree or ward to gradually restore health. \n Comes with 4 charges. Can be used on an allied hero to give them one Tango."
     },
     {
         "id": "241",
         "name": "tango_single",
         "localizedName": "Tango (Shared)",
-        "info": "Consume a target tree or ward to gradually restore health.
-Comes with 4 charges. Can be used on an allied hero to give them one Tango."
+        "info": "Consume a target tree or ward to gradually restore health. \n Comes with 4 charges. Can be used on an allied hero to give them one Tango."
     },
     {
         "id": "45",
@@ -296,8 +290,7 @@ Comes with 4 charges. Can be used on an allied hero to give them one Tango."
         "id": "48",
         "name": "travel_boots",
         "localizedName": "Boots of Travel",
-        "info": "info" "Bonus     +70 Movement Speed
-        Also gives it's wearer the ability to teleport to any friendly unit(except Heroes)"
+        "info": "info" "Bonus     +70 Movement Speed \n Also gives it's wearer the ability to teleport to any friendly unit(except Heroes)"
     },
 
     {
@@ -408,19 +401,19 @@ Comes with 4 charges. Can be used on an allied hero to give them one Tango."
         "id": "73",
         "name": "bracer",
         "localizedName": "Bracer",
-        "info": "Bonus   +6 Strength, +3 Agility, +3 Intelligence, +3 Attack damage"
+        "info": "Bonus   +6 Strength,\n +3 Agility,\n +3 Intelligence,\n +3 Attack damage"
     },
     {
         "id": "75",
         "name": "wraith_band",
         "localizedName": "Wraith Band",
-        "info": "Bonus   +6 Agility, +3 Strength, +3 Intelligence, +3 Attack damage"
+        "info": "Bonus   +6 Agility,\n +3 Strength,\n +3 Intelligence,\n +3 Attack damage"
     },
     {
         "id": "77",
         "name": "null_talisman",
         "localizedName": "Null Talisman",
-        "info": "Bonus    +6 Intelligence, +3 Strength, +3 Agility, +3 Attack damage"
+        "info": "Bonus    +6 Intelligence,\n +3 Strength,\n +3 Agility,\n +3 Attack damage"
     },
     {
         "id": "79",
@@ -433,8 +426,7 @@ Comes with 4 charges. Can be used on an allied hero to give them one Tango."
         "id": "81",
         "name": "vladmir",
         "localizedName": "Vladmir's Offering",
-        "info": "Grants lifesteal, health regeneration, mana regeneration, bonus attack damage, and armor to allies in a 900 radius. The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged.
-                 Multiple instances of Vladmir's Aura do not stack"
+        "info": "Grants lifesteal, health regeneration, mana regeneration, bonus attack damage, and armor to allies in a 900 radius. The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged. \n   Multiple instances of Vladmir's Aura do not stack"
     },
     {
         "id": "84",
@@ -453,9 +445,7 @@ Comes with 4 charges. Can be used on an allied hero to give them one Tango."
         "id": "88",
         "name": "ring_of_basilius",
         "localizedName": "Ring of Basilius",
-        "info": "Grants mana regeneration and armor in a 900 area of effect.
-                 Toggle whether the aura affects other non-hero units.
-                 Multiple instances of Basilius Aura do not stack"
+        "info": "Grants mana regeneration and armor in a 900 area of effect. \n Toggle whether the aura affects other non-hero units. \n  Multiple instances of Basilius Aura do not stack"
     },
     {
         "id": "90",
@@ -467,15 +457,13 @@ Comes with 4 charges. Can be used on an allied hero to give them one Tango."
         "id": "92",
         "name": "urn_of_shadows",
         "localizedName": "Urn of Shadows",
-        "info": "Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero or tower.
-                 Gains charges every time an enemy hero dies within 1400 units. Only the closest Urn to the dying hero will gain a charge."
+        "info": "Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero or tower. \n  Gains charges every time an enemy hero dies within 1400 units. Only the closest Urn to the dying hero will gain a charge."
     },
     {
         "id": "94",
         "name": "headdress",
         "localizedName": "Headdress",
-        "info": "Restores health to allies in a 900 unit radius.
-                 Multiple instances of Regeneration Aura do not stack."
+        "info": "Restores health to allies in a 900 unit radius. \n Multiple instances of Regeneration Aura do not stack."
     },
     {
         "id": "96",
@@ -565,8 +553,7 @@ Comes with 4 charges. Can be used on an allied hero to give them one Tango."
         "id": "112",
         "name": "assault",
         "localizedName": "Assault Cuirass",
-        "info": "Grants attack speed and armor to nearby allied units and structures, and decreases the armor of nearby enemies.
-Multiple instances of Assault Aura do not stack."
+        "info": "Grants attack speed and armor to nearby allied units and structures, and decreases the armor of nearby enemies.\n Multiple instances of Assault Aura do not stack."
     },
     {
         "id": "114",
@@ -674,8 +661,7 @@ Multiple instances of Assault Aura do not stack."
         "id": "147",
         "name": "manta",
         "localizedName": "Manta Style",
-        "info": "Creates 2 images of your hero that last 20 seconds. Melee heroes have a 30 second cooldown on this ability, while for Ranged heroes the cooldown is 45 seconds.
-                 Melee images deal 33% damage and take 350% damage, while Ranged images deal 28% and take 400% damage."
+        "info": "Creates 2 images of your hero that last 20 seconds. Melee heroes have a 30 second cooldown on this ability, while for Ranged heroes the cooldown is 45 seconds.\n Melee images deal 33% damage and take 350% damage, while Ranged images deal 28% and take 400% damage."
     },
     {
         "id": "149",
@@ -837,9 +823,7 @@ Multiple instances of Assault Aura do not stack."
         "id": "212",
         "name": "ring_of_aquila",
         "localizedName": "Ring of Aquila",
-        "info": "Grants mana regeneration and armor in a 900 area of effect.
-                Toggle whether the aura affects other non-hero units.
-                Multiple instances of Aquila Aura do not stack."
+        "info": "Grants mana regeneration and armor in a 900 area of effect. \n Toggle whether the aura affects other non-hero units. \n Multiple instances of Aquila Aura do not stack."
     },
     {
         "id": "214",
@@ -864,12 +848,12 @@ Multiple instances of Assault Aura do not stack."
         "id": "2",
         "name": "blades_of_attack",
         "localizedName": "Blades of Attack",
-        "info": "<b>Bonus</b>  +9 Attack damage"
+        "info": "Bonus  +9 Attack damage"
     },
     {
         "id": "3",
         "name": "broadsword",
-        "localizedName": "Broadsword"
+        "localizedName": "Broadsword",
         "info": "Bonus  +18 Attack damage"
     },
     {
@@ -888,8 +872,7 @@ Multiple instances of Assault Aura do not stack."
         "id": "6",
         "name": "helm_of_iron_will",
         "localizedName": "Helm of Iron Will",
-        "info": "Bonus    +3 Health regeneretaion
-                          +5 Armor"
+        "info": "Bonus    +3 Health regeneretaion \n +5 Armor"
     },
     {
         "id": "7",
@@ -913,8 +896,7 @@ Multiple instances of Assault Aura do not stack."
         "id": "10",
         "name": "quarterstaff",
         "localizedName": "Quarterstaff",
-        "info": "Bonus     +10 Attack damage
-                           +10 Attack speed"
+        "info": "Bonus     +10 Attack damage \n +10 Attack speed"
     },
     {
         "id": "11",
@@ -961,7 +943,7 @@ Multiple instances of Assault Aura do not stack."
     {
         "id": "17",
         "name": "belt_of_strength",
-        "localizedName": "Belt of Strength"
+        "localizedName": "Belt of Strength",
         "info": "Bonus    +6 Strength"
     },
     {
@@ -1004,9 +986,7 @@ Multiple instances of Assault Aura do not stack."
         "id": "24",
         "name": "ultimate_orb",
         "localizedName": "Ultimate Orb",
-        "info": "Bonus  +10 Strength
-+10 Agility
-+10 Intelligence"
+        "info": "Bonus  +10 Strength \n  +10 Agility \n +10 Intelligence"
     },
     {
         "id": "25",
@@ -1110,30 +1090,26 @@ Multiple instances of Assault Aura do not stack."
         "id": "42",
         "name": "ward_observer",
         "localizedName": "Observer Ward",
-        "info": "Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes.
-Hold Control to give one Observer Ward to an allied hero."
+        "info": "Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes. \n Hold Control to give one Observer Ward to an allied hero."
 
     },
     {
         "id": "43",
         "name": "ward_sentry",
         "localizedName": "Sentry Ward",
-        "info": "Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within its range. Lasts 4 minutes.
-Hold Control to give one Sentry Ward to an allied hero"
+        "info": "Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within its range. Lasts 4 minutes. \n Hold Control to give one Sentry Ward to an allied hero"
     },
     {
         "id": "44",
         "name": "tango",
         "localizedName": "Tango",
-        "info": "Consume a target tree or ward to gradually restore health.
-Comes with 4 charges. Can be used on an allied hero to give them one Tango."
+        "info": "Consume a target tree or ward to gradually restore health. \n Comes with 4 charges. Can be used on an allied hero to give them one Tango."
     },
     {
         "id": "241",
         "name": "tango_single",
         "localizedName": "Tango (Shared)",
-        "info": "Consume a target tree or ward to gradually restore health.
-Comes with 4 charges. Can be used on an allied hero to give them one Tango."
+        "info": "Consume a target tree or ward to gradually restore health."
     },
     {
         "id": "45",
@@ -1288,8 +1264,8 @@ Comes with 4 charges. Can be used on an allied hero to give them one Tango."
         "id": "81",
         "name": "vladmir",
         "localizedName": "Vladmir's Offering",
-        "info": "Grants lifesteal, health regeneration, mana regeneration, bonus attack damage, and armor to allies in a 900 radius. The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged.
-Multiple instances of Vladmir's Aura do not stack"
+        "info": "Grants lifesteal, health regeneration, mana regeneration, bonus attack damage, and armor to allies in a 900 radius. The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged. \n
+                Multiple instances of Vladmir's Aura do not stack"
     },
     {
         "id": "84",
@@ -1308,9 +1284,7 @@ Multiple instances of Vladmir's Aura do not stack"
         "id": "88",
         "name": "ring_of_basilius",
         "localizedName": "Ring of Basilius",
-        "info": "Grants mana regeneration and armor in a 900 area of effect.
-Toggle whether the aura affects other non-hero units.
-Multiple instances of Basilius Aura do not stack"
+        "info": "Grants mana regeneration and armor in a 900 area of effect. \n Toggle whether the aura affects other non-hero units. \n Multiple instances of Basilius Aura do not stack"
     },
     {
         "id": "90",
@@ -1322,15 +1296,13 @@ Multiple instances of Basilius Aura do not stack"
         "id": "92",
         "name": "urn_of_shadows",
         "localizedName": "Urn of Shadows",
-        "info": "Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero or tower.
-Gains charges every time an enemy hero dies within 1400 units. Only the closest Urn to the dying hero will gain a charge."
+        "info": "Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero or tower. \n Gains charges every time an enemy hero dies within 1400 units. Only the closest Urn to the dying hero will gain a charge."
     },
     {
         "id": "94",
         "name": "headdress",
         "localizedName": "Headdress",
-        "info": "Restores health to allies in a 900 unit radius.
-Multiple instances of Regeneration Aura do not stack."
+        "info": "Restores health to allies in a 900 unit radius. \n Multiple instances of Regeneration Aura do not stack."
     },
     {
         "id": "96",
@@ -1420,8 +1392,7 @@ Multiple instances of Regeneration Aura do not stack."
         "id": "112",
         "name": "assault",
         "localizedName": "Assault Cuirass",
-        "info": "Grants attack speed and armor to nearby allied units and structures, and decreases the armor of nearby enemies.
-Multiple instances of Assault Aura do not stack."
+        "info": "Grants attack speed and armor to nearby allied units and structures, and decreases the armor of nearby enemies. \n Multiple instances of Assault Aura do not stack."
     },
     {
         "id": "114",
@@ -1493,7 +1464,7 @@ Multiple instances of Assault Aura do not stack."
         "id": "135",
         "name": "monkey_king_bar",
         "localizedName": "Monkey King Bar",
-        "info": "Activate: makes the user spell imune for 10/9/8/7/6/5 seconds" 
+        "info": "Activate: makes the user spellimune for 10/9/8/7/6/5 seconds" 
     },
     {
         "id": "137",
@@ -1523,14 +1494,13 @@ Multiple instances of Assault Aura do not stack."
         "id": "145",
         "name": "bfury",
         "localizedName": "Battle Fury",
-        "info": "Destroy a target tree or ward. Chop cast range is increased when targetting wards."
+        "info": "Gives it's user the ability to cleave. \n Active: Destroy a target tree or ward. Chop cast range is increased when targetting wards."
     },
     {
         "id": "147",
         "name": "manta",
         "localizedName": "Manta Style",
-        "info": "Creates 2 images of your hero that last 20 seconds. Melee heroes have a 30 second cooldown on this ability, while for Ranged heroes the cooldown is 45 seconds.
-Melee images deal 33% damage and take 350% damage, while Ranged images deal 28% and take 400% damage."
+        "info": "Creates 2 images of your hero that last 20 seconds. Melee heroes have a 30 second cooldown on this ability, while for Ranged heroes the cooldown is 45 seconds. \n Melee images deal 33% damage and take 350% damage, while Ranged images deal 28% and take 400% damage."
     },
     {
         "id": "149",
@@ -1693,8 +1663,7 @@ Melee images deal 33% damage and take 350% damage, while Ranged images deal 28% 
         "name": "ring_of_aquila",
         "localizedName": "Ring of Aquila",
         "info": "Grants mana regeneration and armor in a 900 area of effect.
-                Toggle whether the aura affects other non-hero units.
-                Multiple instances of Aquila Aura do not stack."
+                Toggle whether the aura affects other non-hero units,\n Multiple instances of Aquila Aura do not stack."
     },
     {
         "id": "214",
