@@ -1,17 +1,45 @@
+@media (max-width: 800px) {
+  body {
+    background-image: url("800px.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: top center;
+    background-color: black;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: url("1920px_bakgrund.png");
+    /* Center and scale the image nicely */
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+body {
+  color: #9d9d9d;
+}
+
 .product .img-responsive {
-    margin: 0 auto;
+  margin: 0 auto;
 }
-.space { 
-	margin-bottom: 40px; 
-	margin-top: 3.5%;
+.space {
+  margin-bottom: 40px;
+  margin-top: 3.5%;
 }
-.container-1{
+.container-1 {
   /*width: 100%;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;*/
 }
-.container-1 input#search{
+.container-1 input#search {
   width: 100%;
   height: 50px; /* Ändra storlek på search baren*/
   background: #2b303b;
@@ -23,29 +51,30 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 
-  -webkit-transition: background .55s ease;
-  -moz-transition: background .55s ease;
-  -ms-transition: background .55s ease;
-  -o-transition: background .55s ease;
-  transition: background .55s ease;
-
+  -webkit-transition: background 0.55s ease;
+  -moz-transition: background 0.55s ease;
+  -ms-transition: background 0.55s ease;
+  -o-transition: background 0.55s ease;
+  transition: background 0.55s ease;
 }
 .container-1 input#search::-webkit-input-placeholder {
-   color: #65737e;
+  color: #65737e;
 }
- 
-.container-1 input#search:-moz-placeholder { /* Firefox 18- */
-   color: #65737e;  
+
+.container-1 input#search:-moz-placeholder {
+  /* Firefox 18- */
+  color: #65737e;
 }
- 
-.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
-   color: #65737e;  
+
+.container-1 input#search::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #65737e;
 }
- 
-.container-1 input#search:-ms-input-placeholder {  
-   color: #65737e;  
+
+.container-1 input#search:-ms-input-placeholder {
+  color: #65737e;
 }
-.container-1 .icon{
+.container-1 .icon {
   position: absolute;
   top: 13%;
   margin-left: 2%;
@@ -53,103 +82,219 @@
   z-index: 1;
   color: #4f5b66;
 }
-.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
-    outline:none;
-    background: #ffffff;
-  	
-  }
+.container-1 input#search:hover,
+.container-1 input#search:focus,
+.container-1 input#search:active {
+  outline: none;
+  background: #ffffff;
+}
 
-.tab-container{
+.tab-container {
   /*background : #efefef;*/
   margin: 0;
   padding: 0;
   max-height: 35px;
 }
 
-#spells_title{
+#spells_title {
   color: red;
 }
 
-#items_title{
+#items_title {
   color: red;
 }
 
-#lore_title{
+#lore_title {
   color: red;
 }
 
-ul.tabs{
+#spells {
+  padding-bottom: 20px;
+}
+
+.media-left {
+  padding: 5px 0 0 5px;
+}
+
+.media-heading {
+  padding: 5px 0 0 5px;
+}
+
+ul.tabs {
   margin: 0;
-  list-style-type : none;
-  line-height : 35px; /* Höjd på texten */
+  list-style-type: none;
+  line-height: 35px; /* Höjd på texten */
   max-height: 35px; /* Höjd på fliken */
   overflow: hidden;
   display: inline-block;
-  padding-right: 20px
+  padding-right: 20px;
 }
 
-ul.tabs > li.active{
+ul.tabs > li.active {
   z-index: 2;
-  background: green; /*Färgen på den aktiva taben */
+  background: #2b303b; /*Färgen på den aktiva taben */
 }
 
-ul.tabs > li.active:before{
-  border-color : transparent;
+ul.tabs > li.active:before {
+  border-color: transparent;
 }
 
-
-ul.tabs > li.active:after{
-  border-color : transparent;
+ul.tabs > li.active:after {
+  border-color: transparent;
 }
 
-ul.tabs > li{
-  float : right;
-  margin : 5px -10px 0; /* Avstånd mellan tabsen och höjd på dem*/
+ul.tabs > li {
+  float: right;
+  margin: 5px -10px 0; /* Avstånd mellan tabsen och höjd på dem*/
   border-top-right-radius: 25px 170px; /* Formen på tabsen */
-  border-top-left-radius: 20px 90px; /* Formen på tabsen */ 
-  padding : 0 30px 0 25px; /* Storlek på tabsen*/
+  border-top-left-radius: 20px 90px; /* Formen på tabsen */
+  padding: 0 30px 0 25px; /* Storlek på tabsen*/
   height: 170px;
-  background: #ddd; /* Färg på den inaktiva tabsen */
-  position : relative;
-  box-shadow: 0 10px 20px rgba(0,0,0,.5);
-  max-width : 200px;
+  background: #404859; /* Färg på den inaktiva tabsen */
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  max-width: 200px;
 }
 
-ul.tabs > li > a{
+ul.tabs > li > a {
   display: inline-block;
-  max-width:100%;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   text-decoration: none;
   color: #222;
 }
 
-ul.tabs > li:before, ul.tabs > li:after{
-  content : '';
-  background : transparent;
+ul.tabs > li:before,
+ul.tabs > li:after {
+  content: "";
+  background: transparent;
   height: 20px;
   width: 20px;
   border-radius: 100%;
   /*border-width: 10px;*/
   top: 0px;
-  border-style : solid;
-  position : auto;
+  border-style: solid;
+  position: auto;
 }
 
-ul.tabs > li:before{
-  border-color : transparent;
-  -webkit-transform : rotate(48deg);
+ul.tabs > li:before {
+  border-color: transparent;
+  -webkit-transform: rotate(48deg);
   left: -23px;
 }
 
-ul.tabs > li:after{
-  border-color : transparent transparent transparent #ddd;
-  -webkit-transform : rotate(-48deg);
+ul.tabs > li:after {
+  border-color: transparent;
+  -webkit-transform: rotate(-48deg);
   right: -17px;
 }
 
+/* items css*/
+.col-centered {
+  float: none;
+  margin: 0 auto 0 auto;
+}
+.wrap {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  float: left;
+}
+.tooltip {
+  /* Position the tooltip */
+  position: absolute;
+  opacity: 0;
+  top: 110%;
+  left: 50%;
+  padding: 20px;
+  text-align: center;
+  width: 200%;
+  font-size: 11px;
+  z-index: 3;
+  margin-left: -100%;
+  background: rgba(255, 255, 255, 0.95);
+  transition: 1s;
+  pointer-events: none;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: (0, 0, 0, 0.7);
+}
+.tooltip::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  z-index: 100;
+}
+
+.wrap img {
+  display: block;
+  width: 85px;
+  height: 64px;
+  margin: 5px;
+  -webkit-transition: opacity 0.26s ease-out;
+  -moz-transition: opacity 0.26s ease-out;
+  -ms-transition: opacity 0.26s ease-out;
+  -o-transition: opacity 0.26s ease-out;
+  transition: opacity 0.26s ease-out;
+  transition: 500ms;
+}
+#cont:hover img {
+  opacity: 0.5;
+}
+#cont:hover .wrap:hover img {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 2;
+  position: relative;
+  transition: 500ms;
+}
+.wrap:hover .tooltip {
+  opacity: 1;
+}
+.pilwrap div {
+  display: block;
+  width: 85px;
+  height: 64px;
+  margin: 5px;
+  -webkit-transition: opacity 0.26s ease-out;
+  -moz-transition: opacity 0.26s ease-out;
+  -ms-transition: opacity 0.26s ease-out;
+  -o-transition: opacity 0.26s ease-out;
+  transition: opacity 0.26s ease-out;
+  transition: 500ms;
+}
+.pilwrap:hover div {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 2;
+  position: relative;
+  transition: 500ms;
+}
 /* Clear Fix took for HTML 5 Boilerlate*/
 
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}

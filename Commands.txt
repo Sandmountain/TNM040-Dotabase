@@ -1,4 +1,4 @@
-### Lägga upp fil
+﻿### Lägga upp fil
 git add filnamn.filtyp
 git commit -m “infotext”
 git push
@@ -20,5 +20,5 @@ Använd sedan ip adressen som står given i webläsaren
 
 
 
-
+$ npm install -g bower
 
