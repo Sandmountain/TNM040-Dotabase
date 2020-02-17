@@ -1,5 +1,5 @@
-## DOTA BASE
-# Project Course TNM040 
+# DOTABASE
+## Project Course TNM040 
 
 Live [demo](https://sandmountain.github.io/TNM040-Projekt/)
 
