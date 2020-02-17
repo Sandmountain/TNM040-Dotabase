@@ -1,7 +1,7 @@
 # DOTABASE
 ## Project Course TNM040 
 
-The live demo for this project doesn't work. If you want to seet he project, download the files and start a local server.
+The live demo for this project doesn't work. If you want to see the project in all it's glory you have to download the files and start a local server.
 
 
 Thanks to:
