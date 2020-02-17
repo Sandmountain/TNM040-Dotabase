@@ -1,0 +1,186 @@
+<!doctype html>
+<html ng-app="demo" ng-controller="AppController">
+   <head>
+      <link rel="icon" type="image/png" href="pages/dota.ico">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Dotabase</title>
+      <link rel="stylesheet" href="../dist/carousel-3d.css">
+      <link rel="stylesheet" href="demo.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="pages/style.css">
+      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      <link rel="stylesheet" href="../dist/carousel-3d.css">
+   </head>
+   <body ng-controller="AppController as app">
+      <!-- navbar -->
+      <nav class="navbar navbar-inverse">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+            <a class="navbar-brand" href="index.html">Dotabase</a>
+         </div>
+         <div class="collapse navbar-collapse" id="myNavbar"><ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="rss.html">News</a></li>    
+            <li><a href="items.html">Items</a></li>
+            <li><a href="#">Guides</a></li>
+         </ul>
+         </div>
+      
+
+      </nav>
+      <!-- navbar slut -->
+      <div class="container">
+         <!-- Sökruta -->
+         <div class="col-md-8 col-md-offset-2">
+            <div class="container-1">
+               <span class="icon glyphicon glyphicon-search"></span>
+               <input type="text" id="search" name="filter" ng-model="app.filterQuery" ng-change="app.filterSlides()" placeholder="Search..."  />
+            </div>
+         </div>
+         <!-- Sökruta slut -->
+
+         <!-- Karusell -->
+         <carousel3d
+            ng-model="app.filteredSlides"
+            options="app.options"
+            on-selected-click="app.selectedClick(index)"
+            on-slide-change="app.slideChanged(index)"
+            on-last-slide="app.lastSlide(index)"
+            on-before-change="app.beforeChange(index)">
+        
+        <!-- <carousel3d-slide ng-repeat="hero in heroes | filter:app.filterQuery |orderBy:'name'">
+            <figure>
+               <img ng-src="images/heroes/{{hero.url}}_vert.jpg" alt=""/>
+               <figcaption ng-bind="hero.localizedName"></figcaption>
+            </figure>
+         </carousel3d-slide>-->
+         
+            <carousel3d-slide ng-repeat="slide in app.filteredSlides">
+            <figure>
+               <img ng-src="{{slide.src}}" alt=""/>
+               <figcaption ng-bind="slide.caption"></figcaption>
+            </figure>
+         </carousel3d-slide>
+          
+      </div>
+         <!-- Karusell slut -->
+
+
+      <div class="mainContainer">
+
+         <!-- Inforuta -->
+         <div class="container" >
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+               <div class=tab-container>
+                    <ul class="tabs clearfix">
+                       <li><a id="lore_title" href="javascript:void(0)" onclick="openTab('lore')">Lore</a></li>
+                       <li><a id="items_title" href="javascript:void(0)" onclick="openTab('items')">Items</a></li>
+                       <li><a id="spells_title" href="javascript:void(0)" onclick="openTab('spells')">Spells</a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+            <div class="row">
+               <div class="col-md-8 col-md-offset-2" style="background-color: #2b303b; border-radius: 5px">
+                  
+                  <!-- Abilities -->
+                  <div id="spells" class="container cate">
+                     <div data-ng-repeat="hero in hero">
+                        <h1> {{hero.localizedName}}</h1>
+                     </div>
+                     <div class ="col-md-8">
+                        <div data-ng-repeat="ability in currentAbilities">
+                           <div class="media-heading">
+                              <img ng-src="images/abilities/{{ability.name}}_hp1.png" style="width:60px">
+                           </div>
+                           <div>
+                              <h4>{{ability.localizedName}}</h4>
+                              <div class="containerSize">
+                              <p> {{ability.info}}</p>
+                              <img alt="ability" src="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/0/04/Pip_ganker.png/24px-Pip_ganker.png?version=f403b95dc688f11a6af39e1110731b4d" width="24" height="24"><p class="fat"> {{ability.Damage}}</p>
+                              <img alt="Cooldown" src="https://hydra-media.cursecdn.com/dota2.gamepedia.com/b/b7/Cooldown_symbol.png?version=7429ed9baf0f121e6ab3324bfdfad708" width="20" height="20"><p class="fat">{{ability.CD}}</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Items -->
+                  <div id="items" class="container cate">
+                    <h2>Items</h2>
+                    <p >
+                      Core Items:
+                      <li class="col-md-8"><img alt="Power Treads icon.png" src="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/6/6b/Power_Treads_icon.png/30px-Power_Treads_icon.png?version=8a0928e0797b87663a27ee60823e5b18" width="30" height="22" srcset="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/6/6b/Power_Treads_icon.png/45px-Power_Treads_icon.png?version=8a0928e0797b87663a27ee60823e5b18 1.5x, https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/6/6b/Power_Treads_icon.png/60px-Power_Treads_icon.png?version=8a0928e0797b87663a27ee60823e5b18 2x"> Power Treads provide Anti-Mage with attack speed and attributes, allowing  for a substantial increase in damage and durability.</li>
+                      <li class="col-md-8"> <img alt="Magic Wand icon.png" src="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/7/74/Magic_Wand_icon.png/30px-Magic_Wand_icon.png?version=4a31a7c26c0a3e0338aa299b53df8d24" width="30" height="22" srcset="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/7/74/Magic_Wand_icon.png/45px-Magic_Wand_icon.png?version=4a31a7c26c0a3e0338aa299b53df8d24 1.5x, https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/7/74/Magic_Wand_icon.png/60px-Magic_Wand_icon.png?version=4a31a7c26c0a3e0338aa299b53df8d24 2x"> Magic Wand provides Anti-Mage with more attributes and good HP and mana regeneration if the enemy is using a lot of spells.</li>
+                      <li class="col-md-8"> <img alt="Yasha icon.png" src="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/d/d1/Yasha_icon.png/30px-Yasha_icon.png?version=1b2d742a5cc9bbe26066d98d89ed0841" width="30" height="22" srcset="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/d/d1/Yasha_icon.png/45px-Yasha_icon.png?version=1b2d742a5cc9bbe26066d98d89ed0841 1.5x, https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/d/d1/Yasha_icon.png/60px-Yasha_icon.png?version=1b2d742a5cc9bbe26066d98d89ed0841 2x"> Yasha provides agility and movement speed to Anti-Mage, and can be built into a Manta Style.</li>
+                      <li class="col-md-8"><img alt="Battle Fury icon.png" src="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/c/c1/Battle_Fury_icon.png/30px-Battle_Fury_icon.png?version=43e192a1ae8c0dd4f6601151f2eb5a8b" width="30" height="22" srcset="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/c/c1/Battle_Fury_icon.png/45px-Battle_Fury_icon.png?version=43e192a1ae8c0dd4f6601151f2eb5a8b 1.5x, https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/c/c1/Battle_Fury_icon.png/60px-Battle_Fury_icon.png?version=43e192a1ae8c0dd4f6601151f2eb5a8b 2x"> Battle Fury provides Anti-Mage with HP and mana regeneration, and gives Anti-Mage a cleave that allows Anti-Mage to farm faster and push faster.</li>
+                      <li class="col-md-8"><img alt="Manta Style icon.png" src="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/8/84/Manta_Style_icon.png/30px-Manta_Style_icon.png?version=7171fd71a68fec2d5b0114f337a56602" width="30" height="22" srcset="https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/8/84/Manta_Style_icon.png/45px-Manta_Style_icon.png?version=7171fd71a68fec2d5b0114f337a56602 1.5x, https://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/8/84/Manta_Style_icon.png/60px-Manta_Style_icon.png?version=7171fd71a68fec2d5b0114f337a56602 2x">Manta Style provides attributes that benefit Anti-Mage very well. The illusions benefit from Mana Break, greatly improving Anti-Mage damage, pushing  potential and mana-burning capabilities. Additionally, the split allows Anti-Mage to dodge and remove spell effects, which can be useful in combat or when escaping.</li>
+                      </p>
+                  </div>
+                  <!-- Lore -->
+                  <div id="lore" class="container cate">
+                    <p class="col-md-8">
+                    The monks of Turstarkuri watched the rugged valleys below their mountain monastery as wave after wave of invaders swept through the lower kingdoms. Ascetic and pragmatic, in their remote monastic eyrie they remained aloof from mundane strife, wrapped in meditation that knew no gods or elements of magic. Then came the Legion of the Dead God, crusaders with a sinister mandate to replace all local worship with their Unliving Lord's poisonous nihilosophy. From a landscape that had known nothing but blood and battle for a thousand years, they tore the souls and bones of countless fallen legions and pitched them against Turstarkuri. The monastery stood scarcely a fortnight against the assault, and the few monks who bothered to surface from their meditations believed the invaders were but demonic visions sent to distract them from meditation. They died where they sat on their silken cushions. Only one youth survived--a pilgrim who had come as an acolyte, seeking wisdom, but had yet to be admitted to the monastery. He watched in horror as the monks to whom he had served tea and nettles were first slaughtered, then raised to join the ranks of the Dead God's priesthood. With nothing but a few of Turstarkuri's prized dogmatic scrolls, he crept away to the comparative safety of other lands, swearing to obliterate not only the Dead God's magic users--but to put an end to magic altogether.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Inforuta slut -->
+
+      </div>  
+      
+
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="./bower_components/angular/angular.js"></script>
+      <script src="./bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="./bower_components/angular-swipe/dist/angular-swipe.js"></script>
+      <script src="./dist/carousel-3d.js"></script>
+      <script src="demo.js"></script>
+
+      <!-- Jacobs stuff-->
+      <script>
+      var tabs = $('.tabs > li');
+
+      tabs.on("click", function(){
+        tabs.removeClass('active');
+        $(this).addClass('active');
+      });
+      </script>
+
+      <script>
+        openTab("spells")
+        function openTab(tabCat) {
+            var i;
+            var x = document.getElementsByClassName("cate");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            document.getElementById(tabCat).style.display = "block";
+        }
+      </script>
+      <!-- Jacobs stuff-->
+      
+      <script>
+         var _gaq = _gaq || [];
+         _gaq.push(['_setAccount', 'UA-4467381-14']);
+         _gaq.push(['_trackPageview']);
+         
+         (function () {
+             var ga = document.createElement('script');
+             ga.type = 'text/javascript';
+             ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(ga, s);
+         })();
+      </script>
+   </body>
+</html>
